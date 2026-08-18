@@ -1,0 +1,42 @@
+[
+  {
+    "mechanism_id": "grounded_task_fit_confirmation",
+    "summary_rule": "IF grounded evidence resolves whether a product property fits the buyer's prespecified task, THEN task fit changes effective WTP and can change agreement and negotiated price.",
+    "detail_rules": 6,
+    "wtp_confirmed_detail_rules": 6,
+    "strict_price_detail_rules": 3,
+    "strict_mechanism_confirmed": "not_evaluated_under_two-rule_criterion",
+    "mechanism_evidence_tier": "established_mechanism_family_with_strict_detail_price_rules",
+    "scope": "Controlled LLM-agent simulator only"
+  },
+  {
+    "mechanism_id": "verification_cost",
+    "summary_rule": "IF product claims are specific, traceable, and verifiable, THEN buyer verification cost and uncertainty decrease, increasing effective WTP and transaction value.",
+    "detail_rules": 2,
+    "wtp_confirmed_detail_rules": 2,
+    "strict_price_detail_rules": 0,
+    "strict_mechanism_confirmed": false,
+    "mechanism_evidence_tier": "mechanism_wtp_supported_price_not_confirmed",
+    "scope": "Controlled LLM-agent simulator only"
+  },
+  {
+    "mechanism_id": "integration_cost",
+    "summary_rule": "IF delivery format, schema, and service scope reduce buyer integration effort, THEN time to value and effective WTP increase.",
+    "detail_rules": 2,
+    "wtp_confirmed_detail_rules": 2,
+    "strict_price_detail_rules": 0,
+    "strict_mechanism_confirmed": false,
+    "mechanism_evidence_tier": "mechanism_wtp_supported_price_not_confirmed",
+    "scope": "Controlled LLM-agent simulator only"
+  },
+  {
+    "mechanism_id": "governance_risk",
+    "summary_rule": "IF usage rights, privacy compliance, and responsibility boundaries are explicitly bounded, THEN expected loss and the buyer's risk discount decrease; unresolved boundaries reduce transaction value or cause exit.",
+    "detail_rules": 2,
+    "wtp_confirmed_detail_rules": 2,
+    "strict_price_detail_rules": 1,
+    "strict_mechanism_confirmed": false,
+    "mechanism_evidence_tier": "mechanism_wtp_supported_partial_price_confirmation",
+    "scope": "Controlled LLM-agent simulator only"
+  }
+]

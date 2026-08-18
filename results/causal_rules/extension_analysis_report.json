@@ -1,0 +1,60 @@
+{
+  "analysis_revision": {
+    "raw_runs_changed": false,
+    "reason": "The original update-field regular expression did not recognize daily, weekly, or monthly refresh as synonyms for update cadence, even when the control-arm seller explicitly said the capability was unresolved or could not be confirmed or ruled out.",
+    "samples_or_thresholds_changed": false,
+    "type": "control_integrity_parser_bug_fix"
+  },
+  "causal_scope": "Controlled LLM-agent simulator only",
+  "decisions": [
+    {
+      "bonferroni_alpha": 0.025,
+      "complete_pairs": 80,
+      "control_integrity": 1.0,
+      "legacy_control_integrity_before_parser_fix": 1.0,
+      "mean_relative_negotiated_price_effect": 0.024039716632537678,
+      "mean_relative_wtp_effect": 0.03573900665588425,
+      "minimum_both_arm_agreements_pass": true,
+      "price_log10_95_ci": [
+        0.005061895335091688,
+        0.016175942401954663
+      ],
+      "price_p_value": 0.0004099959000409996,
+      "price_test_pass": true,
+      "rule_id": "coverage_task_fit_price_premium",
+      "status": "strict_causal_negotiated_price_rule_confirmed_in_simulator",
+      "wtp_prerequisite_pass": true
+    },
+    {
+      "bonferroni_alpha": 0.025,
+      "complete_pairs": 80,
+      "control_integrity": 1.0,
+      "legacy_control_integrity_before_parser_fix": 0.775,
+      "mean_relative_negotiated_price_effect": 0.018708363253695515,
+      "mean_relative_wtp_effect": 0.05583556172820603,
+      "minimum_both_arm_agreements_pass": true,
+      "price_log10_95_ci": [
+        0.0029100476443727143,
+        0.013461905107947935
+      ],
+      "price_p_value": 0.004839951600483995,
+      "price_test_pass": true,
+      "rule_id": "update_cadence_task_fit_price_premium",
+      "status": "strict_causal_negotiated_price_rule_confirmed_in_simulator",
+      "wtp_prerequisite_pass": true
+    }
+  ],
+  "input_hashes": {
+    "outputs\\extension_plan.csv": "a371b9ef2f9ec7d3873d458979d11952d05c1e92106f38a2aba35bf779e37802",
+    "outputs\\runs\\extension_rule_runs_v1.jsonl": "a5e273c218fb30412321b76aa3b97c205c3d4317639ba73993c6e6b15fbf0e40",
+    "outputs\\runs\\extension_rule_runs_v1_manifest.json": "fde39b00eee64d466d2e145b11730ad47b4c06536f6e70e91922acc5f8d2d444",
+    "protocol.json": "49fc88d956418243ebf3f254e06addf2ce9bcf7eb435ae90c70a82aaa6566761"
+  },
+  "pairs": 160,
+  "products_deleted": 0,
+  "protocol_version": "causal-price-rule-extension-v1",
+  "real_price_gate_used": false,
+  "runs": 320,
+  "status": "causal_price_rule_extension_analysis_complete",
+  "strict_rules_confirmed": 2
+}

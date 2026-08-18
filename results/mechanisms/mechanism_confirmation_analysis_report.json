@@ -1,0 +1,181 @@
+{
+  "causal_scope": "Controlled LLM-agent simulator only",
+  "development_only": false,
+  "independent_confirmation_completed": true,
+  "mechanisms": [
+    {
+      "causal_confirmation_status": "not_confirmed",
+      "detail_rules_advanced": [
+        "verified_privacy_compliance"
+      ],
+      "detail_rules_screened": 2,
+      "mechanism_id": "governance_risk",
+      "mechanism_status": "mechanism_not_confirmed"
+    },
+    {
+      "causal_confirmation_status": "not_confirmed",
+      "detail_rules_advanced": [],
+      "detail_rules_screened": 2,
+      "mechanism_id": "integration_cost",
+      "mechanism_status": "mechanism_not_confirmed"
+    },
+    {
+      "causal_confirmation_status": "not_confirmed",
+      "detail_rules_advanced": [],
+      "detail_rules_screened": 2,
+      "mechanism_id": "verification_cost",
+      "mechanism_status": "mechanism_not_confirmed"
+    }
+  ],
+  "pairs": 234,
+  "products_deleted": 0,
+  "real_price_gate_used": false,
+  "rules": [
+    {
+      "agreement_rate_effect": 0.17948717948717952,
+      "both_arm_agreement_pairs": 18,
+      "confirmation_status": "not_confirmed_as_strict_negotiated_price_rule",
+      "control_agreement_rate": 0.5384615384615384,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.021478708290544372,
+      "mean_relative_wtp_effect": 0.09652186105522395,
+      "mechanism_id": "verification_cost",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        0.0025946174177616872,
+        0.01586809895012431
+      ],
+      "price_sign_flip_p_value": 0.02001953125,
+      "rule_id": "verified_content_specification",
+      "treatment_agreement_rate": 0.717948717948718,
+      "wtp_log10_95_ci": [
+        0.038753236533459794,
+        0.04124340434283875
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    },
+    {
+      "agreement_rate_effect": 0.05128205128205132,
+      "both_arm_agreement_pairs": 18,
+      "confirmation_status": "not_confirmed_as_strict_negotiated_price_rule",
+      "control_agreement_rate": 0.5128205128205128,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.020773867356790536,
+      "mean_relative_wtp_effect": 0.09342048593657175,
+      "mechanism_id": "verification_cost",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        -0.0014753332789245606,
+        0.018583349682954216
+      ],
+      "price_sign_flip_p_value": 0.134033203125,
+      "rule_id": "verified_field_semantics",
+      "treatment_agreement_rate": 0.5641025641025641,
+      "wtp_log10_95_ci": [
+        0.037041246164511765,
+        0.04046522690240782
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    },
+    {
+      "agreement_rate_effect": 0.05128205128205121,
+      "both_arm_agreement_pairs": 30,
+      "confirmation_status": "not_confirmed_as_strict_negotiated_price_rule",
+      "control_agreement_rate": 0.7692307692307693,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.015297874916332766,
+      "mean_relative_wtp_effect": 0.07669669592394486,
+      "mechanism_id": "integration_cost",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        0.0017661133370810993,
+        0.011050552130042182
+      ],
+      "price_sign_flip_p_value": 0.011499885001149988,
+      "rule_id": "stable_machine_readable_schema",
+      "treatment_agreement_rate": 0.8205128205128205,
+      "wtp_log10_95_ci": [
+        0.030348920176805867,
+        0.0337729009147019
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    },
+    {
+      "agreement_rate_effect": 0.20512820512820518,
+      "both_arm_agreement_pairs": 21,
+      "confirmation_status": "not_confirmed_as_strict_negotiated_price_rule",
+      "control_agreement_rate": 0.5641025641025641,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.020185628998690714,
+      "mean_relative_wtp_effect": 0.08559294286462575,
+      "mechanism_id": "integration_cost",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        0.002118503826209038,
+        0.014888108511656582
+      ],
+      "price_sign_flip_p_value": 0.01692983070169298,
+      "rule_id": "seller_integration_support",
+      "treatment_agreement_rate": 0.7692307692307693,
+      "wtp_log10_95_ci": [
+        0.03408417189087427,
+        0.03719688165259794
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    },
+    {
+      "agreement_rate_effect": 0.3333333333333333,
+      "both_arm_agreement_pairs": 13,
+      "confirmation_status": "not_confirmed_as_strict_negotiated_price_rule",
+      "control_agreement_rate": 0.38461538461538464,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.010856211167608274,
+      "mean_relative_wtp_effect": 0.11288456694903595,
+      "mechanism_id": "governance_risk",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        -0.00233702033887124,
+        0.01092071544342922
+      ],
+      "price_sign_flip_p_value": 0.2109375,
+      "rule_id": "verified_usage_rights",
+      "treatment_agreement_rate": 0.717948717948718,
+      "wtp_log10_95_ci": [
+        0.043889207640303844,
+        0.04886954325906171
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    },
+    {
+      "agreement_rate_effect": 0.20512820512820507,
+      "both_arm_agreement_pairs": 21,
+      "confirmation_status": "strict_causal_negotiated_price_rule_confirmed_in_simulator",
+      "control_agreement_rate": 0.5897435897435898,
+      "control_integrity": 1.0,
+      "mean_relative_negotiated_price_effect": 0.035269496905093525,
+      "mean_relative_wtp_effect": 0.1076323700321106,
+      "mechanism_id": "governance_risk",
+      "pairs": 39,
+      "positive_wtp_pair_share": 1.0,
+      "price_log10_95_ci": [
+        0.006841697667442904,
+        0.0240113074225598
+      ],
+      "price_sign_flip_p_value": 0.0011399886001139988,
+      "rule_id": "verified_privacy_compliance",
+      "treatment_agreement_rate": 0.7948717948717948,
+      "wtp_log10_95_ci": [
+        0.04248848824752819,
+        0.04622373996159661
+      ],
+      "wtp_sign_flip_p_value": 9.99990000099999e-06
+    }
+  ],
+  "runs": 468,
+  "status": "mechanism_confirmation_analysis_complete"
+}

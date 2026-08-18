@@ -1,0 +1,14 @@
+{
+  "active_detail_rule_records": 12,
+  "causal_scope": "Controlled LLM-agent simulator only",
+  "input_hashes": {
+    "37_causal_price_rule_extension\\outputs\\combined_causal_rule_catalog.csv": "2af48670af781313eaf8c9afc069ad7a8cef1d22a1a5d9019fb76b99cfbde64c",
+    "40_mechanism_confirmation\\outputs\\mechanism_confirmation_rule_results.csv": "fb311718d42426b3afaa0b014e96d84991329a88800d729ccc6a43db75855c83",
+    "40_mechanism_confirmation\\protocol.json": "7e5e9a846c42da40b08a0f12bd115aeee27429f8cfb1776de7523b3c041823e7"
+  },
+  "mechanism_families": 4,
+  "risk_mechanism_evidence_tier": "mechanism_wtp_supported_partial_price_confirmation",
+  "status": "final_mechanism_evidence_catalog_complete",
+  "strict_causal_negotiated_price_rule_records": 4,
+  "strict_new_mechanisms": []
+}

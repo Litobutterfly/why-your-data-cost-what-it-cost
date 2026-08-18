@@ -1,0 +1,28 @@
+{
+  "associational_candidates_withheld_from_causal_catalog": 5,
+  "catalog_rules": 5,
+  "causal_scope": "Controlled LLM-agent simulator only; no direct real-market causal claim",
+  "causal_transaction_rules": 2,
+  "causal_wtp_rules": 5,
+  "input_hashes": {
+    "24_frozen_rule_mining\\outputs\\frozen_rule_mining_report.json": "260c82a9153977128c0a7fab6c05639609347932b4f57539242935063e9b8f43",
+    "24_frozen_rule_mining\\outputs\\validated_rules.json": "5ca199736e64626fb7a148cfd490e7ef0f50e93f8687ca0916ddde85b99e5fd4",
+    "28_financial_v3\\confirmation_protocol_v3.json": "eb0eaab51a4b9c0571f79e598b67468aecaff59fc147fce7360afeb7d2a1b965",
+    "28_financial_v3\\outputs\\task_fit_interventions\\confirmation_decision_v1.json": "47d882ad2164fd3de41eefe071965bcecc17b248e6177f0c17f581636a4655d1",
+    "28_financial_v3\\outputs\\task_fit_interventions\\confirmation_task_fit_runs_v1.jsonl": "39221752c8ef4341237e807beb5183462f83413e841264868c749b53b9820e37",
+    "28_financial_v3\\outputs\\task_fit_interventions\\confirmation_task_fit_v1_analysis.json": "fe06a919a78866c3d6f62ae62ba25af5d1ceed3d12330ddcfd0bbde2d76f68b7",
+    "30_financial_supplementary_validation\\outputs\\rule_interventions\\rule_confirmation_decisions.json": "125ccb8fdbe7ae832040fc550a9758c37ebf0e963ccd475b3fb7a55d94ad97e3",
+    "30_financial_supplementary_validation\\outputs\\rule_interventions\\supplementary_rule_analysis.json": "2422c995a3f0ea91b6b4fdfba94c32c582445b3294e0c92b81e258694aadd300",
+    "30_financial_supplementary_validation\\outputs\\rule_interventions\\supplementary_rule_runs_v1.jsonl": "5c8e67b76601063cd7a12f552e876dc2cde4b6963d2ad624ff5e66e7498c69ff",
+    "30_financial_supplementary_validation\\protocol.json": "62915e0c37e2ac8e0a530ed4ba7c3d3aef89d8f320280e1444908772ed94b4c1",
+    "36_causal_pricing_rule_mining\\protocol.json": "a75dff28b4c1eb2ed33248dd60d0214ffc745d0650c18b5d5dfe4218ed4863ac"
+  },
+  "pairs_audited": 240,
+  "products_deleted": 0,
+  "protocol_version": "causal-pricing-rule-synthesis-v1",
+  "real_price_gate_used": false,
+  "runs_audited": 480,
+  "status": "causal_pricing_rule_synthesis_complete",
+  "strict_causal_negotiated_price_rules": 1,
+  "strict_price_rule_robustness": "supported_but_leave_one_pair_out_sensitive"
+}

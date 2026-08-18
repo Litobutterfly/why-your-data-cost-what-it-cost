@@ -1,0 +1,85 @@
+|--- csv <= 0.50000
+|   |--- Download <= 0.50000
+|   |   |--- implicit_context_term__sources_score <= 0.50000
+|   |   |   |--- Limitations <= 0.50000
+|   |   |   |   |--- units <= 0.00091
+|   |   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |   |--- History <= 1642.50000
+|   |   |   |   |   |   |   |--- value: [3.37375]
+|   |   |   |   |   |   |--- History >  1642.50000
+|   |   |   |   |   |   |   |--- History <= 3102.50000
+|   |   |   |   |   |   |   |   |--- value: [3.60908]
+|   |   |   |   |   |   |   |--- History >  3102.50000
+|   |   |   |   |   |   |   |   |--- value: [3.49526]
+|   |   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |   |--- value: [2.80872]
+|   |   |   |   |--- units >  0.00091
+|   |   |   |   |   |--- S3Bucket <= 0.50000
+|   |   |   |   |   |   |--- implicit_context_term__country_observed <= 0.50000
+|   |   |   |   |   |   |   |--- value: [3.38218]
+|   |   |   |   |   |   |--- implicit_context_term__country_observed >  0.50000
+|   |   |   |   |   |   |   |--- value: [3.57797]
+|   |   |   |   |   |--- S3Bucket >  0.50000
+|   |   |   |   |   |   |--- value: [3.71815]
+|   |   |   |--- Limitations >  0.50000
+|   |   |   |   |--- value: [2.44797]
+|   |   |--- implicit_context_term__sources_score >  0.50000
+|   |   |   |--- locations <= 0.00007
+|   |   |   |   |--- value: [4.11268]
+|   |   |   |--- locations >  0.00007
+|   |   |   |   |--- value: [4.61690]
+|   |--- Download >  0.50000
+|   |   |--- products <= 0.00000
+|   |   |   |--- value: [2.15649]
+|   |   |--- products >  0.00000
+|   |   |   |--- units <= 0.02159
+|   |   |   |   |--- value: [1.64536]
+|   |   |   |--- units >  0.02159
+|   |   |   |   |--- value: [1.73468]
+|--- csv >  0.50000
+|   |--- units <= 0.00000
+|   |   |--- implicit_context_term__analytics_observed <= 0.50000
+|   |   |   |--- IdCompanies <= 0.50000
+|   |   |   |   |--- value: [2.42531]
+|   |   |   |--- IdCompanies >  0.50000
+|   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |--- value: [1.01446]
+|   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |--- value: [1.56139]
+|   |   |--- implicit_context_term__analytics_observed >  0.50000
+|   |   |   |--- value: [-0.82907]
+|   |--- units >  0.00000
+|   |   |--- people <= 0.00008
+|   |   |   |--- NCountries <= 14.00000
+|   |   |   |   |--- implicit_context_term__analytics_observed <= 0.50000
+|   |   |   |   |   |--- units <= 0.00001
+|   |   |   |   |   |   |--- units <= 0.00001
+|   |   |   |   |   |   |   |--- value: [1.83917]
+|   |   |   |   |   |   |--- units >  0.00001
+|   |   |   |   |   |   |   |--- units <= 0.00001
+|   |   |   |   |   |   |   |   |--- value: [2.14463]
+|   |   |   |   |   |   |   |--- units >  0.00001
+|   |   |   |   |   |   |   |   |--- value: [2.08257]
+|   |   |   |   |   |--- units >  0.00001
+|   |   |   |   |   |   |--- PercGDP <= 0.02498
+|   |   |   |   |   |   |   |--- value: [1.95887]
+|   |   |   |   |   |   |--- PercGDP >  0.02498
+|   |   |   |   |   |   |   |--- units <= 0.00003
+|   |   |   |   |   |   |   |   |--- people <= 0.00002
+|   |   |   |   |   |   |   |   |   |--- value: [2.22476]
+|   |   |   |   |   |   |   |   |--- people >  0.00002
+|   |   |   |   |   |   |   |   |   |--- value: [2.33477]
+|   |   |   |   |   |   |   |--- units >  0.00003
+|   |   |   |   |   |   |   |   |--- units <= 0.00004
+|   |   |   |   |   |   |   |   |   |--- value: [2.50124]
+|   |   |   |   |   |   |   |   |--- units >  0.00004
+|   |   |   |   |   |   |   |   |   |--- value: [2.66690]
+|   |   |   |   |--- implicit_context_term__analytics_observed >  0.50000
+|   |   |   |   |   |--- value: [1.57479]
+|   |   |   |--- NCountries >  14.00000
+|   |   |   |   |--- value: [3.08899]
+|   |   |--- people >  0.00008
+|   |   |   |--- people <= 0.00018
+|   |   |   |   |--- value: [2.90596]
+|   |   |   |--- people >  0.00018
+|   |   |   |   |--- value: [3.16658]

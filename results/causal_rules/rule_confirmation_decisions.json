@@ -1,0 +1,47 @@
+{
+  "causal_scope": "Confirmation applies only to the controlled LLM-agent simulator; it is not direct real-market causal evidence.",
+  "confirmed_rules": 3,
+  "decisions": [
+    {
+      "bonferroni_alpha": 0.016666666666666666,
+      "complete_pairs": 40,
+      "expected_direction": "positive",
+      "mean_value_update_effect": 0.2325,
+      "rule_id": "confirmed_coverage_match_increases_value",
+      "status": "confirmed_in_controlled_simulator",
+      "two_sided_sign_flip_p_value": 1.999960000799984e-05,
+      "value_update_95_ci": [
+        0.1875,
+        0.2775
+      ]
+    },
+    {
+      "bonferroni_alpha": 0.016666666666666666,
+      "complete_pairs": 40,
+      "expected_direction": "positive",
+      "mean_value_update_effect": 0.41500000000000004,
+      "rule_id": "confirmed_identifier_content_match_increases_value",
+      "status": "confirmed_in_controlled_simulator",
+      "two_sided_sign_flip_p_value": 1.999960000799984e-05,
+      "value_update_95_ci": [
+        0.3725,
+        0.4525
+      ]
+    },
+    {
+      "bonferroni_alpha": 0.016666666666666666,
+      "complete_pairs": 40,
+      "expected_direction": "negative",
+      "mean_value_update_effect": -0.13999999999999999,
+      "rule_id": "confirmed_customization_limit_decreases_value",
+      "status": "confirmed_in_controlled_simulator",
+      "two_sided_sign_flip_p_value": 1.999960000799984e-05,
+      "value_update_95_ci": [
+        -0.185,
+        -0.0875
+      ]
+    }
+  ],
+  "status": "supplementary_rule_confirmation_evaluated",
+  "total_rules": 3
+}

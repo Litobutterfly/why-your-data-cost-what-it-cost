@@ -1,0 +1,25 @@
+[
+  {
+    "causal_confirmation_status": "not_confirmed",
+    "detail_rules_advanced": [
+      "verified_privacy_compliance"
+    ],
+    "detail_rules_screened": 2,
+    "mechanism_id": "governance_risk",
+    "mechanism_status": "mechanism_not_confirmed"
+  },
+  {
+    "causal_confirmation_status": "not_confirmed",
+    "detail_rules_advanced": [],
+    "detail_rules_screened": 2,
+    "mechanism_id": "integration_cost",
+    "mechanism_status": "mechanism_not_confirmed"
+  },
+  {
+    "causal_confirmation_status": "not_confirmed",
+    "detail_rules_advanced": [],
+    "detail_rules_screened": 2,
+    "mechanism_id": "verification_cost",
+    "mechanism_status": "mechanism_not_confirmed"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "status": "frozen_before_extension_plan_and_api_execution",
+  "protocol_version": "causal-price-rule-extension-v1",
+  "date": "2026-08-17",
+  "scope": "Independent simulator confirmation of two general data-pricing rules selected from prior evidence before this extension",
+  "rules": [
+    {
+      "rule_id": "coverage_task_fit_price_premium",
+      "field_group": "coverage",
+      "task_fit": "match",
+      "expected_direction": "positive",
+      "selection_basis": "Two disjoint predecessor experiments estimated +1.73% and +1.70% conditional negotiated-price effects"
+    },
+    {
+      "rule_id": "update_cadence_task_fit_price_premium",
+      "field_group": "update",
+      "task_fit": "match",
+      "expected_direction": "positive",
+      "selection_basis": "Development and independent-confirmation estimates were +4.79% and +6.38%, but the latter contained only four both-arm agreements"
+    }
+  ],
+  "sample": {
+    "pairs_per_rule": 80,
+    "arms_per_pair": 2,
+    "total_pairs": 160,
+    "total_runs": 320,
+    "source": "Financial external products not used in prior paired causal interventions",
+    "selection": "Deterministic hash order within each rule; no outcome or real transaction price is loaded",
+    "pre_treatment_eligibility": [
+      "the target grounded field is available",
+      "the buyer budget cap is at least the seller floor",
+      "the product was not used in an earlier paired causal intervention"
+    ]
+  },
+  "contrast": {
+    "control": "The target property remains explicitly unresolved",
+    "treatment": "A grounded source-record fact confirms that the target property satisfies the buyer's prespecified requirement",
+    "fixed_within_pair": [
+      "product identity and all non-target fields",
+      "buyer and seller profiles",
+      "private contexts",
+      "M0 platform reference",
+      "pre-evidence willingness to pay and budget cap",
+      "seller floor",
+      "initial patience",
+      "engine, prompts, valuation formula, and maximum messages"
+    ]
+  },
+  "primary_confirmation": {
+    "outcome": "log10 treatment/control negotiated-price ratio among pairs agreeing under both arms",
+    "tests": "two-sided paired sign-flip test and paired bootstrap interval",
+    "multiplicity": "Bonferroni correction across two rule-specific price hypotheses",
+    "alpha_per_rule": 0.025,
+    "minimum_both_arm_agreements": 24,
+    "requirements": [
+      "all 80 planned pairs complete",
+      "control unresolved-disclosure rate equals 1.0",
+      "effective willingness-to-pay effect is positive with p <= 0.025 and a positive 95% interval",
+      "conditional negotiated-price effect is positive with p <= 0.025 and a positive 95% interval"
+    ]
+  },
+  "secondary_outcomes": [
+    "agreement probability with exact paired McNemar test",
+    "reference-normalized realized transaction value using zero for no agreement",
+    "continuous buyer value update",
+    "effective willingness-to-pay effect"
+  ],
+  "inference": {
+    "sign_flip_draws": 100000,
+    "paired_bootstrap_draws": 20000,
+    "seed": 20264517
+  },
+  "valuation": {
+    "organizational_budget_multiplier": 1.15,
+    "maximum_relative_wtp_update": 0.15,
+    "formula": "effective_wtp = min(budget_cap, pre_evidence_wtp * exp(log(1.15) * value_update))"
+  },
+  "forbidden": {
+    "real_transaction_price_visible": true,
+    "real_price_acceptance_gate": true,
+    "product_deletion_after_outcomes": true,
+    "parameter_or_threshold_change_after_results": true,
+    "replacement_of_failed_pairs_based_on_outcomes": true,
+    "claim_outside_controlled_simulator": true
+  }
+}

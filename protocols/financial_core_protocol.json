@@ -1,0 +1,76 @@
+{
+  "status": "frozen_before_core_analysis_execution",
+  "protocol_version": "financial-core-analysis-v1",
+  "frozen_date": "2026-08-17",
+  "scope": "development analysis on the 1912-product financial training partition",
+  "evaluation": {
+    "outer_folds": 5,
+    "outer_repeats": 20,
+    "stratification": "transaction-price decile crossed with REST API availability",
+    "selection_boundary": "base terms and evidence-state mechanisms are selected inside each outer training fold",
+    "base_term_k": 12,
+    "evidence_state_mechanism_k": 24,
+    "primary_metric": "MAE of log10 real monthly transaction price",
+    "secondary_metrics": [
+      "RMSE of log10 real monthly transaction price",
+      "median absolute error of log10 real monthly transaction price",
+      "R-squared"
+    ],
+    "paired_bootstrap_draws": 20000
+  },
+  "primary_models": {
+    "m0": "35 explicit platform product fields",
+    "text_baseline": "M0 plus 12 training-fold-selected source terms",
+    "m1": "text baseline plus 24 training-fold-selected negotiation evidence-state mechanisms",
+    "decision_tree_parameters_inherited_from_m0": {
+      "ccp_alpha": 0.0,
+      "max_depth": null,
+      "min_samples_leaf": 10
+    }
+  },
+  "capacity_check": {
+    "model": "DecisionTreeRegressor",
+    "maximum_leaf_nodes": 128,
+    "same_limit_for_m0_text_and_m1": true
+  },
+  "benchmarks": {
+    "random_forest": {
+      "n_estimators": 200,
+      "min_samples_leaf": 10,
+      "max_features": 1.0
+    },
+    "hist_gradient_boosting": {
+      "max_iter": 200,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    }
+  },
+  "ablations": [
+    "remove all evidence-state mechanisms",
+    "permute the evidence-state mechanism block at outer validation time",
+    "remove source-term context",
+    "remove each evidence-state class separately"
+  ],
+  "rule_discovery": {
+    "status": "exploratory candidates only",
+    "rule_tree_max_depth": 4,
+    "rule_tree_min_samples_leaf": 50,
+    "quality_fields": [
+      "support",
+      "coverage",
+      "confidence",
+      "effect size",
+      "bootstrap interval",
+      "outer-fold selection stability"
+    ]
+  },
+  "forbidden": {
+    "real_price_acceptance_gate": true,
+    "test_rows": true,
+    "test_targets": true,
+    "different_hyperparameters_between_m0_and_m1_within_a_model_family": true,
+    "causal_language_for_post_selection_associations": true
+  }
+}

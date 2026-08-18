@@ -1,0 +1,27 @@
+{
+  "agreements": 204,
+  "completed_runs": 320,
+  "contrast_version": "confirmed_vs_unresolved_rule_v1",
+  "currency_aware_price_text_validator": true,
+  "legacy_disclosure_patience_cost_disabled_in_both_arms": true,
+  "new_errors": 0,
+  "patience_source": "D:\\研究生\\研二上\\symbiotrade\\37_causal_price_rule_extension\\outputs\\extension_patience.csv",
+  "plan_path": "D:\\研究生\\研二上\\symbiotrade\\37_causal_price_rule_extension\\outputs\\extension_plan.csv",
+  "products_replaced_after_results": false,
+  "protocol_status": "frozen_before_extension_plan_and_api_execution",
+  "real_price_gate_used": false,
+  "real_transaction_price_visible_to_agents": false,
+  "requested_runs": 320,
+  "same_engine_prompts_and_valuation_formula_in_both_arms": true,
+  "same_initial_patience_in_both_arms": true,
+  "status": "completed",
+  "thresholds_changed_after_results": false,
+  "updated_unix_time": 1786964135.3793638,
+  "usage": {
+    "completion_tokens": 249461,
+    "prompt_cache_hit_tokens": 4526080,
+    "prompt_cache_miss_tokens": 5930576,
+    "prompt_tokens": 10456656,
+    "total_tokens": 10706117
+  }
+}

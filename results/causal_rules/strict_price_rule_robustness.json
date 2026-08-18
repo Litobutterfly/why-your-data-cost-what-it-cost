@@ -1,0 +1,23 @@
+{
+  "both_arm_agreement_pairs": 24,
+  "exact_sign_flip": {
+    "negative_pairs": 4,
+    "nonzero_pairs": 18,
+    "positive_pairs": 14,
+    "two_sided_exact_p_value": 0.038604736328125
+  },
+  "interpretation": "Four paired tests support the positive conditional price effect at 0.05, but only half of leave-one-pair-out analyses remain below 0.05. The rule is statistically supported in the frozen sample but should not be called a strongly robust or large price effect.",
+  "leave_one_pair_out": {
+    "analyses": 24,
+    "p_le_0_05_count": 12,
+    "p_value_maximum": 0.0760650634765625,
+    "p_value_minimum": 0.0128936767578125
+  },
+  "mean_relative_price_effect": 0.017498579175703632,
+  "nonzero_direction_sign_test_p_value": 0.0308837890625,
+  "paired_t_two_sided_p_value": 0.03940963240847968,
+  "role": "post-confirmation robustness audit; it does not replace the preregistered decision",
+  "status": "supported_but_leave_one_pair_out_sensitive",
+  "wilcoxon_pratt_two_sided_p_value": 0.03652411100236463,
+  "zero_price_difference_pairs": 6
+}

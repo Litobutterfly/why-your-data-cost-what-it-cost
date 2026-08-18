@@ -1,0 +1,8 @@
+# Local credentials and generated Python caches
+.env
+.env.*
+__pycache__/
+*.py[cod]
+
+# The release archive is distributed separately from a Git repository.
+TKDE_anonymous_experiment_release.zip

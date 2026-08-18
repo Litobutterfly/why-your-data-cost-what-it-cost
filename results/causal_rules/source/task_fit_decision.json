@@ -1,0 +1,53 @@
+{
+  "all_preregistered_primary_rules_confirmed_in_simulator": true,
+  "analysis_input_sha256": "39221752c8ef4341237e807beb5183462f83413e841264868c749b53b9820e37",
+  "causal_scope": "The rules are independently confirmed within the controlled LLM-agent simulator. They are not direct evidence of causal effects in real data markets.",
+  "execution_requirements": {
+    "all_planned_pairs_complete": true,
+    "control_integrity_pass": true
+  },
+  "primary_rule_decisions": {
+    "confirmed_task_match_increases_value": {
+      "bonferroni_threshold_pass": true,
+      "confirmed_in_simulator": true,
+      "cross_field_requirement_pass": true,
+      "direction_and_interval_pass": true,
+      "expected_direction": "positive",
+      "field_groups_with_expected_direction": 5,
+      "mean_value_update_effect": 0.4150000000000001,
+      "paired_bootstrap_95_ci": [
+        0.3733333333333333,
+        0.4583333333333333
+      ],
+      "two_sided_sign_flip_p_value": 1.999960000799984e-05
+    },
+    "confirmed_task_mismatch_decreases_value": {
+      "bonferroni_threshold_pass": true,
+      "confirmed_in_simulator": true,
+      "cross_field_requirement_pass": true,
+      "direction_and_interval_pass": true,
+      "expected_direction": "negative",
+      "field_groups_with_expected_direction": 5,
+      "mean_value_update_effect": -0.14166666666666666,
+      "paired_bootstrap_95_ci": [
+        -0.18833333333333332,
+        -0.09499999999999999
+      ],
+      "two_sided_sign_flip_p_value": 1.999960000799984e-05
+    }
+  },
+  "protocol_version": "independent-task-fit-confirmation-v3",
+  "secondary_match_agreement_effect": {
+    "control_rate": 0.43333333333333335,
+    "difference": 0.2833333333333333,
+    "mcnemar_two_sided_p_value": 0.00022125244140625,
+    "treatment_rate": 0.7166666666666667
+  },
+  "secondary_match_price_propagation": {
+    "both_arm_agreement_pairs": 24,
+    "criterion_pass": true,
+    "mean_relative_price_effect": 0.017498579175703632,
+    "two_sided_sign_flip_p_value": 0.037439251214975704
+  },
+  "status": "independent_confirmation_complete"
+}

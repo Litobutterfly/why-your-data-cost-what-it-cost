@@ -1,0 +1,34 @@
+{
+  "status": "frozen_before_telecom_execution",
+  "protocol_version": "telecom-replication-v1",
+  "date": "2026-08-17",
+  "domain": "Telecom",
+  "selection_reason": "A moderate-cost replication domain with 526 products. The release includes Telecom alongside Financial; other source domains were excluded before packaging.",
+  "rows": 526,
+  "split": {
+    "train_rows": 420,
+    "test_rows": 106,
+    "test_fraction": 0.2,
+    "seed": 20260813,
+    "stratification": "LogPriceMo decile crossed with RESTAPI, identical to the financial protocol"
+  },
+  "m0": {
+    "features": "the same 35 explicit platform fields used in Financial",
+    "model": "DecisionTreeRegressor",
+    "parameter_selection": "five-fold training-only CV by MAE"
+  },
+  "m1": {
+    "definition": "M0 explicit fields plus source-description terms and negotiation-derived evidence-state mechanisms",
+    "same_tree_parameters_as_m0": true,
+    "feature_taxonomy_selection": "training products only",
+    "test_feature_construction": "target-free and frozen after training taxonomy"
+  },
+  "primary_metric": "MAE of log10 real monthly transaction price",
+  "forbidden": {
+    "test_target_feature_construction": true,
+    "test_target_hyperparameter_selection": true,
+    "real_price_gate": true,
+    "changing_domains_after_observing_m1_results": true,
+    "asymmetric_m0_m1_model_capacity": true
+  }
+}

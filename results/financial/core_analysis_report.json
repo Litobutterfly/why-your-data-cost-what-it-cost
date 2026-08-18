@@ -1,0 +1,659 @@
+{
+  "decision_tree_ablations": {
+    "drop_bounded_limitation": {
+      "baseline": "decision_tree__drop_bounded_limitation",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.30774410491134796,
+        "median_absolute_error_log10_usd": 0.09316053271342775,
+        "r2": 0.6741499849051189,
+        "rmse_log10_usd": 0.5562549076070114
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.350418410041841,
+        "percentile_95_ci": [
+          -0.00028159054592612903,
+          0.0003981333653058701
+        ],
+        "point_estimate": 6.402294086958402e-05,
+        "relative_mae_reduction": 0.00020803953625050633,
+        "two_sided_bootstrap_p_value": 0.7209
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.0011186729703593814,
+        4.346356617501712e-06,
+        0.0013853291703862566
+      ],
+      "repeats_model_better": 10,
+      "repeats_total": 20
+    },
+    "drop_confirmed_property": {
+      "baseline": "decision_tree__drop_confirmed_property",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.30764064702895594,
+        "median_absolute_error_log10_usd": 0.09369781749194049,
+        "r2": 0.6737629923648001,
+        "rmse_log10_usd": 0.5565933210928298
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.3786610878661088,
+        "percentile_95_ci": [
+          -0.0006168860976715747,
+          0.0005233308995680943
+        ],
+        "point_estimate": -3.943494152254252e-05,
+        "relative_mae_reduction": -0.00012818508185893525,
+        "two_sided_bootstrap_p_value": 0.8965
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.003100294790832336,
+        0.00037431530702453086,
+        0.0016298521701857845
+      ],
+      "repeats_model_better": 13,
+      "repeats_total": 20
+    },
+    "drop_fit_positive": {
+      "baseline": "decision_tree__drop_fit_positive",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.3076624677393565,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740990697645157,
+        "rmse_log10_usd": 0.55627994991219
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.056485355648535567,
+        "percentile_95_ci": [
+          -9.980640972823098e-05,
+          6.409520837100687e-05
+        ],
+        "point_estimate": -1.761423112194145e-05,
+        "relative_mae_reduction": -5.7251803417450845e-05,
+        "two_sided_bootstrap_p_value": 0.6716
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.0005765152119141026,
+        0.0,
+        0.0004016121887809299
+      ],
+      "repeats_model_better": 1,
+      "repeats_total": 20
+    },
+    "drop_mixed_evidence": {
+      "baseline": "decision_tree__drop_mixed_evidence",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.30800568130982786,
+        "median_absolute_error_log10_usd": 0.0932371074508305,
+        "r2": 0.6737364075268687,
+        "rmse_log10_usd": 0.5565964626278352
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.36140167364016734,
+        "percentile_95_ci": [
+          -0.0006508926408189918,
+          0.001266124585532016
+        ],
+        "point_estimate": 0.0003255993393494207,
+        "relative_mae_reduction": 0.0010571212127152131,
+        "two_sided_bootstrap_p_value": 0.4976
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.0015381866252463336,
+        9.766967495603018e-05,
+        0.0022774001231385538
+      ],
+      "repeats_model_better": 13,
+      "repeats_total": 20
+    },
+    "drop_unresolved_listing_claim": {
+      "baseline": "decision_tree__drop_unresolved_listing_claim",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.31140064910329457,
+        "median_absolute_error_log10_usd": 0.09392425483638525,
+        "r2": 0.6682871778464451,
+        "rmse_log10_usd": 0.5612504553074328
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.46129707112970714,
+        "percentile_95_ci": [
+          0.0014573366104028045,
+          0.006070841548208942
+        ],
+        "point_estimate": 0.0037205671328161007,
+        "relative_mae_reduction": 0.011947846427198528,
+        "two_sided_bootstrap_p_value": 0.002
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.002115506293009904,
+        0.003592582218675644,
+        0.009412597944321468
+      ],
+      "repeats_model_better": 18,
+      "repeats_total": 20
+    },
+    "no_source_terms": {
+      "baseline": "decision_tree__no_source_terms",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.31765154556286335,
+        "median_absolute_error_log10_usd": 0.09940953933751386,
+        "r2": 0.6636357242175422,
+        "rmse_log10_usd": 0.5651953429653025
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.5455020920502092,
+        "percentile_95_ci": [
+          0.006674925968277843,
+          0.01342585517196176
+        ],
+        "point_estimate": 0.009971463592384908,
+        "relative_mae_reduction": 0.03139120124448301,
+        "two_sided_bootstrap_p_value": 0.0
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        0.0008809742692327107,
+        0.010249613804156787,
+        0.017661234248039587
+      ],
+      "repeats_model_better": 20,
+      "repeats_total": 20
+    },
+    "permuted_mechanisms": {
+      "baseline": "decision_tree__permuted_mechanisms",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.3302814257567172,
+        "median_absolute_error_log10_usd": 0.10962003844380235,
+        "r2": 0.6271862726084156,
+        "rmse_log10_usd": 0.5948557548544245
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.3551255230125523,
+        "percentile_95_ci": [
+          0.01784783848665385,
+          0.027602799697569628
+        ],
+        "point_estimate": 0.022601343786238737,
+        "relative_mae_reduction": 0.06843056261627839,
+        "two_sided_bootstrap_p_value": 0.0
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        0.00898060036465803,
+        0.022652654021501323,
+        0.03376727740218295
+      ],
+      "repeats_model_better": 20,
+      "repeats_total": 20
+    },
+    "text_baseline": {
+      "baseline": "decision_tree__text_baseline",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.31054573545151654,
+        "median_absolute_error_log10_usd": 0.09224932414529889,
+        "r2": 0.6704662080160915,
+        "rmse_log10_usd": 0.5593982741911281
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.48535564853556484,
+        "percentile_95_ci": [
+          0.00038788651203357666,
+          0.005334168945430816
+        ],
+        "point_estimate": 0.0028656534810381474,
+        "relative_mae_reduction": 0.009227798529809605,
+        "two_sided_bootstrap_p_value": 0.0226
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.00486721545994952,
+        0.0031163982921145195,
+        0.008334059757801875
+      ],
+      "repeats_model_better": 14,
+      "repeats_total": 20
+    }
+  },
+  "feature_configuration": {
+    "evidence_state_mechanisms_selected_per_outer_fold": 24,
+    "m0_explicit_features": 35,
+    "selection_is_nested_inside_outer_training_fold": true,
+    "text_terms_selected_per_outer_fold": 12
+  },
+  "inherited_frozen_result_cross_check": {
+    "m0_mae": 0.32176462332226646,
+    "m1_mae": 0.30768008197047847,
+    "text_baseline_mae": 0.31054573545151654
+  },
+  "input_hashes": {
+    "02_cleaned_by_domain\\financial.csv": "1b012c02155ac355620d5fdb092bfb94392af2bf5045f14704406560efc00d26",
+    "04_m0_baseline\\outputs\\financial_train_test_split.csv": "98150e610ddbd52d448f7e757421ae039d4a850a53130d40462ecf1531f64ec2",
+    "04_m0_baseline\\outputs\\m0_decision_tree.joblib": "681565f3cb7a8aa8910f768596ae73eb7baa6affb9802326551a103830b1d427",
+    "23_multi_aspect_discovery\\outputs\\incremental_term_state_observed_k24_evaluation_v1\\incremental_evaluation_report.json": "71931f30c1fce5aa7d36167974178584610cef19e7d1210e0036c7a2391d22df",
+    "23_multi_aspect_discovery\\outputs\\incremental_term_state_observed_k24_evaluation_v1\\nested_selection_rankings.csv": "ba33c1ad7790dac0b847631d773744634f9b74e938254998743e596b02a97a18",
+    "23_multi_aspect_discovery\\outputs\\incremental_term_state_observed_k24_evaluation_v1\\repeated_oof_product_summary.csv": "3ac881b26bd771629d62e6fa28aefe8c4c9d4c7ede9bade046cfdf831646863f",
+    "23_multi_aspect_discovery\\outputs\\multi_aspect_term_observed_matrix_v1.csv": "404286d96a09f31e9835e250a7660b293e75f17f5a26626f93235be05b578c26",
+    "23_multi_aspect_discovery\\outputs\\multi_aspect_term_observed_taxonomy_v1.json": "970f23a922199676e04978250ea5f2492bed0e73f8678fe380022ab11953e2a1",
+    "23_multi_aspect_discovery\\outputs\\multi_aspect_term_state_observed_matrix_v1.csv": "22ad7790ca9fc7602d079d6d671fe1eb6e8a9f6c9989d835fe6aa5d007f22895",
+    "23_multi_aspect_discovery\\outputs\\multi_aspect_term_state_observed_taxonomy_v1.json": "e8538c8ca76c50d72dcdaf6799141eab32bab20784c3206bf6cfbfcb2f6873fe",
+    "24_frozen_rule_mining\\outputs\\frozen_m1_k24_decision_tree.joblib": "e51299e4a099775f5c326a9ac6eec8b63d70615df5b3a1ccd09a5a10197a00dd",
+    "29_financial_core_analysis\\protocol.json": "944c9435a25bb4f18a7909edcff5ae1b7809eac5f6fd753028b3f9b3f287cc65"
+  },
+  "interpretation": {
+    "m1_superiority_scope": "Development evidence on repeated OOF predictions for the 1,912 training products; not a fresh held-out confirmation.",
+    "rule_scope": "Post-selection associational pricing candidates, not causal rules."
+  },
+  "model_comparisons": {
+    "capacity_matched_tree": {
+      "m1_vs_m0": {
+        "baseline": "capacity_matched_tree__m0_explicit",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.3216857475755163,
+          "median_absolute_error_log10_usd": 0.10261643924096293,
+          "r2": 0.6597554456838928,
+          "rmse_log10_usd": 0.5684479853670656
+        },
+        "model": "capacity_matched_tree__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.30786696608799147,
+          "median_absolute_error_log10_usd": 0.09383271905477646,
+          "r2": 0.6733537910082511,
+          "rmse_log10_usd": 0.5569202520434243
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.5292887029288703,
+          "percentile_95_ci": [
+            0.008574152343879047,
+            0.019107104759514652
+          ],
+          "point_estimate": 0.013818781487524833,
+          "relative_mae_reduction": 0.04295739426342116,
+          "two_sided_bootstrap_p_value": 0.0
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          0.0031687733893124305,
+          0.014190677154966025,
+          0.022162787176515996
+        ],
+        "repeats_model_better": 20,
+        "repeats_total": 20
+      },
+      "m1_vs_text_baseline": {
+        "baseline": "capacity_matched_tree__text_baseline",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.31051883344512843,
+          "median_absolute_error_log10_usd": 0.09237665538509422,
+          "r2": 0.670897585955829,
+          "rmse_log10_usd": 0.5590456385500788
+        },
+        "model": "capacity_matched_tree__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.30786696608799147,
+          "median_absolute_error_log10_usd": 0.09383271905477646,
+          "r2": 0.6733537910082511,
+          "rmse_log10_usd": 0.5569202520434243
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.48326359832635984,
+          "percentile_95_ci": [
+            0.00018551462180079302,
+            0.005139038892838511
+          ],
+          "point_estimate": 0.002651867357136955,
+          "relative_mae_reduction": 0.008540117608053443,
+          "two_sided_bootstrap_p_value": 0.0365
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          -0.005402799628316633,
+          0.0029522840203208556,
+          0.008156558637291835
+        ],
+        "repeats_model_better": 15,
+        "repeats_total": 20
+      }
+    },
+    "decision_tree": {
+      "m1_vs_m0": {
+        "baseline": "decision_tree__m0_explicit",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.32176462332226646,
+          "median_absolute_error_log10_usd": 0.1026958444824663,
+          "r2": 0.6592098485471947,
+          "rmse_log10_usd": 0.5689059068015739
+        },
+        "model": "decision_tree__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.30768008197047847,
+          "median_absolute_error_log10_usd": 0.09385265878819535,
+          "r2": 0.6740519602892104,
+          "rmse_log10_usd": 0.5563224250446213
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.5329497907949791,
+          "percentile_95_ci": [
+            0.008885654181800609,
+            0.019464064399216465
+          ],
+          "point_estimate": 0.014084541351787916,
+          "relative_mae_reduction": 0.04377280885127452,
+          "two_sided_bootstrap_p_value": 0.0
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          0.002311262294076824,
+          0.014273398778688523,
+          0.021542002365058162
+        ],
+        "repeats_model_better": 20,
+        "repeats_total": 20
+      },
+      "m1_vs_text_baseline": {
+        "baseline": "decision_tree__text_baseline",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.31054573545151654,
+          "median_absolute_error_log10_usd": 0.09224932414529889,
+          "r2": 0.6704662080160915,
+          "rmse_log10_usd": 0.5593982741911281
+        },
+        "model": "decision_tree__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.30768008197047847,
+          "median_absolute_error_log10_usd": 0.09385265878819535,
+          "r2": 0.6740519602892104,
+          "rmse_log10_usd": 0.5563224250446213
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.48535564853556484,
+          "percentile_95_ci": [
+            0.0003889147942175818,
+            0.005320593890696097
+          ],
+          "point_estimate": 0.0028656534810381474,
+          "relative_mae_reduction": 0.009227798529809605,
+          "two_sided_bootstrap_p_value": 0.0233
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          -0.00486721545994952,
+          0.0031163982921145195,
+          0.008334059757801875
+        ],
+        "repeats_model_better": 14,
+        "repeats_total": 20
+      }
+    },
+    "hist_gradient_boosting": {
+      "m1_vs_m0": {
+        "baseline": "hist_gradient_boosting__m0_explicit",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.23753452682537413,
+          "median_absolute_error_log10_usd": 0.06493254868812236,
+          "r2": 0.7886414278276562,
+          "rmse_log10_usd": 0.448053518750472
+        },
+        "model": "hist_gradient_boosting__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.23514257194647925,
+          "median_absolute_error_log10_usd": 0.06866650420712161,
+          "r2": 0.7963813146790735,
+          "rmse_log10_usd": 0.4397902663054186
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.4361924686192469,
+          "percentile_95_ci": [
+            -0.0021890439859737934,
+            0.006965877818159036
+          ],
+          "point_estimate": 0.002391954878894939,
+          "relative_mae_reduction": 0.01006992503727009,
+          "two_sided_bootstrap_p_value": 0.31
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          -0.002109559515103282,
+          0.002131918491942955,
+          0.007636025591165593
+        ],
+        "repeats_model_better": 13,
+        "repeats_total": 20
+      },
+      "m1_vs_text_baseline": {
+        "baseline": "hist_gradient_boosting__text_baseline",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.23029425616790772,
+          "median_absolute_error_log10_usd": 0.06007674109292814,
+          "r2": 0.7983131581388843,
+          "rmse_log10_usd": 0.43770620249953096
+        },
+        "model": "hist_gradient_boosting__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.23514257194647925,
+          "median_absolute_error_log10_usd": 0.06866650420712161,
+          "r2": 0.7963813146790735,
+          "rmse_log10_usd": 0.4397902663054186
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.3760460251046025,
+          "percentile_95_ci": [
+            -0.007628775015763907,
+            -0.0021087708614536196
+          ],
+          "point_estimate": -0.004848315778571429,
+          "relative_mae_reduction": -0.021052699529928866,
+          "two_sided_bootstrap_p_value": 0.0009
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          -0.010705525111719242,
+          -0.003609151094293439,
+          -0.0014047927242989231
+        ],
+        "repeats_model_better": 0,
+        "repeats_total": 20
+      }
+    },
+    "random_forest": {
+      "m1_vs_m0": {
+        "baseline": "random_forest__m0_explicit",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.29326316766652255,
+          "median_absolute_error_log10_usd": 0.0795266465545281,
+          "r2": 0.7078411440666001,
+          "rmse_log10_usd": 0.5268450108023888
+        },
+        "model": "random_forest__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.28140299885643694,
+          "median_absolute_error_log10_usd": 0.07232972592983214,
+          "r2": 0.717819913208346,
+          "rmse_log10_usd": 0.5177533324325346
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.5601464435146444,
+          "percentile_95_ci": [
+            0.007936621283723777,
+            0.015736777759484042
+          ],
+          "point_estimate": 0.011860168810085548,
+          "relative_mae_reduction": 0.0404420674592592,
+          "two_sided_bootstrap_p_value": 0.0
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          0.007956462148743706,
+          0.012120177516009745,
+          0.015010993010235113
+        ],
+        "repeats_model_better": 20,
+        "repeats_total": 20
+      },
+      "m1_vs_text_baseline": {
+        "baseline": "random_forest__text_baseline",
+        "baseline_mean_metrics": {
+          "mae_log10_usd": 0.28307418338487295,
+          "median_absolute_error_log10_usd": 0.07190903372849274,
+          "r2": 0.7161037384733115,
+          "rmse_log10_usd": 0.5193260173284027
+        },
+        "model": "random_forest__m1_full",
+        "model_mean_metrics": {
+          "mae_log10_usd": 0.28140299885643694,
+          "median_absolute_error_log10_usd": 0.07232972592983214,
+          "r2": 0.717819913208346,
+          "rmse_log10_usd": 0.5177533324325346
+        },
+        "paired_product_bootstrap": {
+          "draws": 20000,
+          "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+          "model_lower_error_product_fraction": 0.5047071129707112,
+          "percentile_95_ci": [
+            -4.361588729239195e-05,
+            0.0033899184397707407
+          ],
+          "point_estimate": 0.0016711845284359697,
+          "relative_mae_reduction": 0.005903698134717555,
+          "two_sided_bootstrap_p_value": 0.0559
+        },
+        "repeat_delta_quantiles_2_5_50_97_5": [
+          -0.0005359009541208964,
+          0.0016593998175108704,
+          0.003936443168233867
+        ],
+        "repeats_model_better": 18,
+        "repeats_total": 20
+      }
+    }
+  },
+  "model_role_decision": {
+    "lowest_absolute_m1_mae_model_family": "hist_gradient_boosting",
+    "m1_mae_by_model_family": {
+      "capacity_matched_tree": 0.30786696608799147,
+      "decision_tree": 0.30768008197047847,
+      "hist_gradient_boosting": 0.23514257194647925,
+      "random_forest": 0.28140299885643694
+    },
+    "reason": "The single tree preserves directly extractable if-then rules. Ensembles are fixed predictive benchmarks, not rule generators.",
+    "single_decision_tree_is_primary_explanatory_model": true
+  },
+  "outer_cv": {
+    "folds": 5,
+    "repeats": 20
+  },
+  "protocol_version": "financial-core-analysis-v1",
+  "real_price_acceptance_gate_used": false,
+  "rows": 1912,
+  "rule_discovery": {
+    "causal_status": "All rules are post-selection associational candidates. Controlled intervention is required for causal confirmation.",
+    "path_candidate_count": 5,
+    "rule_target": "mean repeated-OOF residual from explicit-plus-text baseline",
+    "rule_tree_depth": 4,
+    "rule_tree_leaves": 5,
+    "selected_candidate_ids": [
+      "score__term_state__requirements_unresolved_listing_claim",
+      "score__term_state__global_scope_mixed_evidence",
+      "score__term_state__best_unresolved_listing_claim",
+      "score__term_state__provided_content_mixed_evidence",
+      "score__term_state__requirements_confirmed_property",
+      "score__term_state__insights_bounded_limitation",
+      "score__term_state__level_unresolved_listing_claim",
+      "score__term_state__cover_bounded_limitation",
+      "score__term_state__state_unresolved_listing_claim",
+      "score__term_state__global_scope_confirmed_property",
+      "score__term_state__need_confirmed_property",
+      "score__term_state__scale_wording_unresolved_listing_claim",
+      "score__term_state__customization_unresolved_listing_claim",
+      "score__term_state__time_bounded_limitation",
+      "score__term_state__service_unresolved_listing_claim",
+      "score__term_state__leads_confirmed_property",
+      "score__term_state__offer_mixed_evidence",
+      "score__term_state__use_unresolved_listing_claim",
+      "score__term_state__information_unresolved_listing_claim",
+      "score__term_state__market_confirmed_property",
+      "score__term_state__customization_bounded_limitation",
+      "score__term_state__quality_wording_unresolved_listing_claim",
+      "score__term_state__report_confirmed_property",
+      "score__term_state__best_confirmed_property"
+    ],
+    "univariate_candidate_count": 24
+  },
+  "status": "financial_core_analysis_complete",
+  "target": "LogPriceMo (log10 real monthly transaction price in USD)",
+  "test_rows_used": 0,
+  "test_targets_used": false
+}

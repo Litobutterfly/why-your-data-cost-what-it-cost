@@ -1,0 +1,52 @@
+{
+  "status": "frozen_before_causal_rule_synthesis",
+  "protocol_version": "causal-pricing-rule-synthesis-v1",
+  "date": "2026-08-17",
+  "purpose": "Synthesize previously frozen paired interventions into an outcome-tiered causal pricing rule catalog",
+  "scientific_scope": "Controlled LLM-agent simulator only; no direct real-market causal claim",
+  "provenance": {
+    "candidate_generation": "Negotiation-derived implicit-factor taxonomy and M1 decision-tree paths",
+    "primary_confirmation": "Previously preregistered 120-pair independent task-fit intervention",
+    "supplementary_confirmation": "Previously frozen 120-pair field-specific intervention",
+    "chat_rule_adaptation": "Generate candidates from semantic and structural samples, rank with observed evidence, then require a separate causal intervention before promotion"
+  },
+  "causal_contrast": "Within each pair, treatment confirms one grounded product property while control leaves that same property unresolved",
+  "pair_invariants": [
+    "product",
+    "buyer and seller profiles",
+    "non-intervention private context",
+    "M0 reference price",
+    "pre-evidence willingness to pay",
+    "budget cap",
+    "seller floor",
+    "initial patience",
+    "negotiation engine and valuation formula"
+  ],
+  "evidence_tiers": {
+    "candidate_only": "Observational or tree-path rule without successful paired intervention",
+    "causal_wtp_rule": "Paired intervention changes effective willingness to pay in the expected direction with multiplicity-controlled evidence",
+    "causal_transaction_rule": "Causal WTP rule that also changes agreement probability under its prespecified test",
+    "strict_causal_negotiated_price_rule": "A preregistered paired intervention also passes the negotiated-price propagation criterion among pairs agreeing under both arms"
+  },
+  "primary_confirmation_requirements": {
+    "primary_value_rules": "Use predecessor Bonferroni decisions without redefining hypotheses",
+    "wtp_secondary_bonferroni_alpha": 0.025,
+    "agreement_alpha": 0.05,
+    "negotiated_price": "Use the predecessor preregistered price-propagation decision"
+  },
+  "supplementary_requirements": {
+    "primary_value_bonferroni_alpha": 0.016666666666666666,
+    "wtp_fdr_alpha": 0.05,
+    "agreement_bonferroni_alpha": 0.016666666666666666,
+    "negotiated_price_fdr_alpha": 0.05,
+    "negotiated_price_status": "secondary exploratory unless separately preregistered"
+  },
+  "forbidden": {
+    "real_transaction_price_in_agent_prompt": true,
+    "real_price_acceptance_gate": true,
+    "post_hoc_product_deletion": true,
+    "associational_path_labeled_causal": true,
+    "simulator_result_labeled_real_market_causal": true,
+    "conditional_price_effect_labeled_unconditional": true
+  }
+}

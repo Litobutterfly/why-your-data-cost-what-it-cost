@@ -1,0 +1,204 @@
+{
+  "capacity_and_leakage_audit": {
+    "models_per_ensemble": 100,
+    "new_target_free_prediction_sha256": "758e3b50eeb368afe2812f8fc71e265b3bf9c10d73c90401f106599440fb6f44",
+    "prediction_file_created_without_test_targets": true,
+    "same_tree_hyperparameters": true
+  },
+  "claim_decisions": {
+    "complete_m1_has_lower_primary_mae_than_m0": true,
+    "m1_is_better_on_every_reported_predictive_metric": false,
+    "mechanism_block_has_incremental_development_value": true,
+    "mechanism_block_has_independent_external_value": false
+  },
+  "heldout_limitation": "The 478-product legacy test outcomes were opened by historical workflows; this is not pristine confirmation.",
+  "input_hashes": {
+    "25_external_test_validation\\ensemble\\external_ensemble_evaluation_report.json": "952ac68f2931568bb5a4a285b6943fd1f8f0e862c09859f858fd469975521c0a",
+    "25_external_test_validation\\ensemble\\external_ensemble_predictions_with_targets.csv": "da69f066d0d2b3779411bccac018e61c1679c838153c48be464481e8b8857be6",
+    "25_external_test_validation\\ensemble\\external_ensemble_predictions_without_targets.csv": "906e4d9354ec8bea743f9a9384a9517e5ecf8116fe43563e074afbb73a892c51",
+    "29_financial_core_analysis\\outputs\\core_analysis_report.json": "664cbfcfdef7f2876f673e6ca1bd2cd1fcc375e064af3d19ce8eff740d64a695",
+    "29_financial_core_analysis\\outputs\\oof_product_summary.csv": "518121f7bce0a00cd04ad99472b6f733b5283295941f88f451c6924c88c4bae8",
+    "30_financial_supplementary_validation\\outputs\\rule_interventions\\rule_confirmation_decisions.json": "125ccb8fdbe7ae832040fc550a9758c37ebf0e963ccd475b3fb7a55d94ad97e3",
+    "31_financial_m1_vs_m0_proof\\protocol.json": "d4cba5a1a78f187e817d9249032d02bdc3c563c3c86589c1ef7c47336f8b663e"
+  },
+  "mechanism_evidence": {
+    "development_m1_vs_permuted_mechanisms": {
+      "baseline": "decision_tree__permuted_mechanisms",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.3302814257567172,
+        "median_absolute_error_log10_usd": 0.10962003844380235,
+        "r2": 0.6271862726084156,
+        "rmse_log10_usd": 0.5948557548544245
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.3551255230125523,
+        "percentile_95_ci": [
+          0.01784783848665385,
+          0.027602799697569628
+        ],
+        "point_estimate": 0.022601343786238737,
+        "relative_mae_reduction": 0.06843056261627839,
+        "two_sided_bootstrap_p_value": 0.0
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        0.00898060036465803,
+        0.022652654021501323,
+        0.03376727740218295
+      ],
+      "repeats_model_better": 20,
+      "repeats_total": 20
+    },
+    "development_m1_vs_text": {
+      "baseline": "decision_tree__text_baseline",
+      "baseline_mean_metrics": {
+        "mae_log10_usd": 0.31054573545151654,
+        "median_absolute_error_log10_usd": 0.09224932414529889,
+        "r2": 0.6704662080160915,
+        "rmse_log10_usd": 0.5593982741911281
+      },
+      "model": "decision_tree__m1_full",
+      "model_mean_metrics": {
+        "mae_log10_usd": 0.30768008197047847,
+        "median_absolute_error_log10_usd": 0.09385265878819535,
+        "r2": 0.6740519602892104,
+        "rmse_log10_usd": 0.5563224250446213
+      },
+      "paired_product_bootstrap": {
+        "draws": 20000,
+        "estimand": "product-level mean reduction in absolute log10-price error, averaged across repeated outer folds",
+        "model_lower_error_product_fraction": 0.48535564853556484,
+        "percentile_95_ci": [
+          0.0003889147942175818,
+          0.005320593890696097
+        ],
+        "point_estimate": 0.0028656534810381474,
+        "relative_mae_reduction": 0.009227798529809605,
+        "two_sided_bootstrap_p_value": 0.0233
+      },
+      "repeat_delta_quantiles_2_5_50_97_5": [
+        -0.00486721545994952,
+        0.0031163982921145195,
+        0.008334059757801875
+      ],
+      "repeats_model_better": 14,
+      "repeats_total": 20
+    },
+    "external_m1_vs_text": {
+      "absolute_mae_reduction": 0.0004033397911716751,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.2607327259734021,
+        "median_absolute_error_log10_usd": 0.06350288780602897,
+        "r2": 0.7582513339179944,
+        "rmse_log10_usd": 0.4896925970599542
+      },
+      "model_lower_error_product_fraction": 0.5334728033472803,
+      "model_metrics": {
+        "mae_log10_usd": 0.2603293861822304,
+        "median_absolute_error_log10_usd": 0.055571347307844854,
+        "r2": 0.7498254943313712,
+        "rmse_log10_usd": 0.4981533102390531
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "percentile_95_ci": [
+          -0.0058309302595682296,
+          0.0056079569682295416
+        ],
+        "point_estimate": 0.0004033397911716751,
+        "two_sided_bootstrap_p_value": 0.8416
+      },
+      "primary_support_rule_passed": false,
+      "relative_mae_reduction": 0.0015469473180471434,
+      "same_error_product_fraction": 0.0397489539748954,
+      "two_sided_sign_flip_p_value": 0.9059218815623687
+    }
+  },
+  "primary_frozen_ensemble_m1_vs_m0": {
+    "absolute_mae_reduction": 0.0125012720014383,
+    "baseline_metrics": {
+      "mae_log10_usd": 0.2728306581836687,
+      "median_absolute_error_log10_usd": 0.08507933183542526,
+      "r2": 0.7540499965635076,
+      "rmse_log10_usd": 0.49392943933135297
+    },
+    "model_lower_error_product_fraction": 0.5857740585774058,
+    "model_metrics": {
+      "mae_log10_usd": 0.2603293861822304,
+      "median_absolute_error_log10_usd": 0.055571347307844854,
+      "r2": 0.7498254943313712,
+      "rmse_log10_usd": 0.4981533102390531
+    },
+    "paired_bootstrap": {
+      "draws": 20000,
+      "percentile_95_ci": [
+        0.0031716846760787686,
+        0.021271058634578274
+      ],
+      "point_estimate": 0.0125012720014383,
+      "two_sided_bootstrap_p_value": 0.0089
+    },
+    "primary_support_rule_passed": true,
+    "relative_mae_reduction": 0.04582062765476483,
+    "same_error_product_fraction": 0.0020920502092050207,
+    "two_sided_sign_flip_p_value": 0.005859882802343953
+  },
+  "protocol_version": "financial-m1-vs-m0-proof-v1",
+  "rows": {
+    "development": 1912,
+    "legacy_external": 478
+  },
+  "rule_evidence": {
+    "confirmed_in_controlled_simulator": 3,
+    "scope": "Confirmation applies only to the controlled LLM-agent simulator; it is not direct real-market causal evidence."
+  },
+  "secondary_metric_disclosure": {
+    "price_deciles_total": 10,
+    "price_deciles_where_m1_has_lower_mae": 7,
+    "primary_m1_improves_external_median_absolute_error": true,
+    "primary_m1_improves_external_r2": false,
+    "primary_m1_improves_external_rmse": false
+  },
+  "secondary_training_selected_blend": {
+    "m1_vs_m0": {
+      "absolute_mae_reduction": 0.0125012720014383,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.2728306581836687,
+        "median_absolute_error_log10_usd": 0.08507933183542526,
+        "r2": 0.7540499965635076,
+        "rmse_log10_usd": 0.49392943933135297
+      },
+      "model_lower_error_product_fraction": 0.5857740585774058,
+      "model_metrics": {
+        "mae_log10_usd": 0.2603293861822304,
+        "median_absolute_error_log10_usd": 0.055571347307844854,
+        "r2": 0.7498254943313712,
+        "rmse_log10_usd": 0.4981533102390531
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "percentile_95_ci": [
+          0.0031716846760787686,
+          0.021271058634578274
+        ],
+        "point_estimate": 0.0125012720014383,
+        "two_sided_bootstrap_p_value": 0.0089
+      },
+      "primary_support_rule_passed": true,
+      "relative_mae_reduction": 0.04582062765476483,
+      "same_error_product_fraction": 0.0020920502092050207,
+      "two_sided_sign_flip_p_value": 0.005859882802343953
+    },
+    "m1_weight": 1.0,
+    "test_targets_used_for_weight_selection": false
+  },
+  "status": "financial_m1_vs_m0_proof_complete"
+}

@@ -1,0 +1,86 @@
+{
+  "status": "frozen_before_supplementary_execution",
+  "protocol_version": "financial-supplementary-validation-v1",
+  "frozen_date": "2026-08-17",
+  "external_prediction": {
+    "training_rows": 1912,
+    "legacy_test_rows": 478,
+    "feature_selection_on_test": false,
+    "taxonomy_refit_on_test": false,
+    "frozen_base_terms": 12,
+    "frozen_evidence_state_mechanisms": 24,
+    "primary_metric": "MAE of log10 real monthly transaction price",
+    "paired_bootstrap_draws": 20000,
+    "model_families": [
+      "decision_tree",
+      "capacity_matched_tree",
+      "random_forest",
+      "hist_gradient_boosting"
+    ],
+    "views": [
+      "m0_explicit",
+      "text_baseline",
+      "m1_full"
+    ],
+    "heldout_status": "legacy test outcomes were opened by historical workflows; this is a fixed external replication, not pristine confirmation"
+  },
+  "rule_interventions": {
+    "pairs_per_rule": 40,
+    "arms_per_pair": 2,
+    "total_rules": 3,
+    "total_pairs": 120,
+    "total_runs": 240,
+    "primary_outcome": "buyer value_update",
+    "secondary_outcomes": [
+      "effective willingness to pay",
+      "agreement probability",
+      "agreed price among both-arm agreements"
+    ],
+    "two_sided_sign_flip_draws": 50000,
+    "paired_bootstrap_draws": 20000,
+    "bonferroni_alpha": 0.016666666666666666,
+    "rules": [
+      {
+        "rule_id": "confirmed_coverage_match_increases_value",
+        "field_group": "coverage",
+        "task_fit": "match",
+        "expected_direction": "positive"
+      },
+      {
+        "rule_id": "confirmed_identifier_content_match_increases_value",
+        "field_group": "identifier",
+        "task_fit": "match",
+        "expected_direction": "positive"
+      },
+      {
+        "rule_id": "confirmed_customization_limit_decreases_value",
+        "field_group": "customization",
+        "task_fit": "mismatch",
+        "expected_direction": "negative"
+      }
+    ]
+  },
+  "valuation": {
+    "organizational_budget_multiplier": 1.15,
+    "maximum_relative_wtp_update": 0.15,
+    "formula": "effective_wtp = min(budget_cap, pre_evidence_wtp * exp(log(1.15) * value_update))",
+    "value_update_range": [-1.0, 1.0]
+  },
+  "smoke_integrity_amendment": {
+    "date": "2026-08-17",
+    "reason": "A smoke-run control response was semantically unresolved but was interpreted as confirmed absence.",
+    "change": "Control ledgers now explicitly state that unresolved evidence confirms neither presence nor absence. No outcome threshold, model parameter, rule, sample size, or expected direction changed."
+  },
+  "runtime_integrity_amendment": {
+    "date": "2026-08-17",
+    "reason": "The legacy validator misread a numeric product fact before a dollar-denominated offer as the proposed price.",
+    "change": "A counteroffer rejected only by that mismatch check is accepted when the message contains a dollar-denominated amount matching offer_usd. Prompts, agents, bounds, valuation, outcomes, sample size, and statistical tests are unchanged."
+  },
+  "forbidden": {
+    "real_price_acceptance_gate": true,
+    "test_target_in_prediction_construction": true,
+    "test_target_in_agent_prompt": true,
+    "rule_or_threshold_tuning_after_results": true,
+    "causal_claim_outside_the_controlled_simulator": true
+  }
+}

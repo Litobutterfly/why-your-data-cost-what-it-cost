@@ -1,0 +1,264 @@
+{
+  "base_selection_stability": [
+    {
+      "canonical_id": "context_term__report",
+      "outer_folds_selected": 100
+    },
+    {
+      "canonical_id": "context_term__global_scope",
+      "outer_folds_selected": 98
+    },
+    {
+      "canonical_id": "context_term__type",
+      "outer_folds_selected": 86
+    },
+    {
+      "canonical_id": "context_term__included_content",
+      "outer_folds_selected": 71
+    },
+    {
+      "canonical_id": "context_term__file",
+      "outer_folds_selected": 65
+    },
+    {
+      "canonical_id": "context_term__service",
+      "outer_folds_selected": 64
+    },
+    {
+      "canonical_id": "context_term__level",
+      "outer_folds_selected": 58
+    },
+    {
+      "canonical_id": "context_term__information",
+      "outer_folds_selected": 53
+    },
+    {
+      "canonical_id": "context_term__consumer",
+      "outer_folds_selected": 46
+    },
+    {
+      "canonical_id": "context_term__sources",
+      "outer_folds_selected": 46
+    },
+    {
+      "canonical_id": "context_term__analysis",
+      "outer_folds_selected": 45
+    },
+    {
+      "canonical_id": "context_term__websites",
+      "outer_folds_selected": 41
+    },
+    {
+      "canonical_id": "context_term__need",
+      "outer_folds_selected": 36
+    },
+    {
+      "canonical_id": "context_term__best",
+      "outer_folds_selected": 34
+    },
+    {
+      "canonical_id": "context_term__analytics",
+      "outer_folds_selected": 28
+    },
+    {
+      "canonical_id": "context_term__scale_wording",
+      "outer_folds_selected": 23
+    },
+    {
+      "canonical_id": "context_term__year_wording",
+      "outer_folds_selected": 22
+    },
+    {
+      "canonical_id": "context_term__business",
+      "outer_folds_selected": 20
+    },
+    {
+      "canonical_id": "context_term__storage",
+      "outer_folds_selected": 18
+    },
+    {
+      "canonical_id": "context_term__price",
+      "outer_folds_selected": 18
+    }
+  ],
+  "base_term_k": 12,
+  "candidate_k_values": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "candidate_results": {
+    "m1_incremental_k12": {
+      "incremental_mae_reduction_vs_text": 0.0012088757632808173,
+      "incremental_relative_reduction_vs_text": 0.0038927463020001804,
+      "mean_mae_log10_usd": 0.3093368596882358,
+      "repeats_better_than_text": 13,
+      "repeats_total": 20,
+      "total_relative_reduction_vs_m0": 0.038623772575468764
+    },
+    "m1_incremental_k18": {
+      "incremental_mae_reduction_vs_text": 0.0014443057250844217,
+      "incremental_relative_reduction_vs_text": 0.004650863174741331,
+      "mean_mae_log10_usd": 0.3091014297264322,
+      "repeats_better_than_text": 12,
+      "repeats_total": 20,
+      "total_relative_reduction_vs_m0": 0.039355456373932236
+    },
+    "m1_incremental_k24": {
+      "incremental_mae_reduction_vs_text": 0.0028656534810381578,
+      "incremental_relative_reduction_vs_text": 0.00922779852980964,
+      "mean_mae_log10_usd": 0.30768008197047847,
+      "repeats_better_than_text": 14,
+      "repeats_total": 20,
+      "total_relative_reduction_vs_m0": 0.04377280885127457
+    },
+    "m1_incremental_k6": {
+      "incremental_mae_reduction_vs_text": -0.00010846311649815865,
+      "incremental_relative_reduction_vs_text": -0.00034926615991187,
+      "mean_mae_log10_usd": 0.31065419856801474,
+      "repeats_better_than_text": 9,
+      "repeats_total": 20,
+      "total_relative_reduction_vs_m0": 0.03452966531725852
+    }
+  },
+  "candidate_selection_stability": [
+    {
+      "canonical_id": "score__term_state__global_scope_mixed_evidence",
+      "outer_folds_selected": 94
+    },
+    {
+      "canonical_id": "score__term_state__provided_content_mixed_evidence",
+      "outer_folds_selected": 94
+    },
+    {
+      "canonical_id": "score__term_state__need_confirmed_property",
+      "outer_folds_selected": 89
+    },
+    {
+      "canonical_id": "score__term_state__global_scope_confirmed_property",
+      "outer_folds_selected": 85
+    },
+    {
+      "canonical_id": "score__term_state__best_confirmed_property",
+      "outer_folds_selected": 79
+    },
+    {
+      "canonical_id": "score__term_state__requirements_confirmed_property",
+      "outer_folds_selected": 75
+    },
+    {
+      "canonical_id": "score__term_state__level_unresolved_listing_claim",
+      "outer_folds_selected": 67
+    },
+    {
+      "canonical_id": "score__term_state__report_confirmed_property",
+      "outer_folds_selected": 64
+    },
+    {
+      "canonical_id": "score__term_state__customization_bounded_limitation",
+      "outer_folds_selected": 62
+    },
+    {
+      "canonical_id": "score__term_state__report_unresolved_listing_claim",
+      "outer_folds_selected": 61
+    },
+    {
+      "canonical_id": "score__term_state__scale_wording_unresolved_listing_claim",
+      "outer_folds_selected": 45
+    },
+    {
+      "canonical_id": "score__term_state__websites_unresolved_listing_claim",
+      "outer_folds_selected": 44
+    },
+    {
+      "canonical_id": "score__term_state__information_unresolved_listing_claim",
+      "outer_folds_selected": 42
+    },
+    {
+      "canonical_id": "score__term_state__cover_bounded_limitation",
+      "outer_folds_selected": 41
+    },
+    {
+      "canonical_id": "score__term_state__leads_bounded_limitation",
+      "outer_folds_selected": 38
+    },
+    {
+      "canonical_id": "score__term_state__insights_bounded_limitation",
+      "outer_folds_selected": 38
+    },
+    {
+      "canonical_id": "score__term_state__type_bounded_limitation",
+      "outer_folds_selected": 38
+    },
+    {
+      "canonical_id": "score__term_state__requirements_unresolved_listing_claim",
+      "outer_folds_selected": 37
+    },
+    {
+      "canonical_id": "score__term_state__sales_unresolved_listing_claim",
+      "outer_folds_selected": 37
+    },
+    {
+      "canonical_id": "score__term_state__consumer_unresolved_listing_claim",
+      "outer_folds_selected": 31
+    }
+  ],
+  "decision": {
+    "beats_placebo_at_0_05": true,
+    "better_in_majority_of_repeats": true,
+    "bootstrap_ci_excludes_zero": true,
+    "improves_over_text": true
+  },
+  "input_hashes": {
+    "financial.csv": "1b012c02155ac355620d5fdb092bfb94392af2bf5045f14704406560efc00d26",
+    "financial_train_test_split.csv": "98150e610ddbd52d448f7e757421ae039d4a850a53130d40462ecf1531f64ec2",
+    "m0_decision_tree.joblib": "681565f3cb7a8aa8910f768596ae73eb7baa6affb9802326551a103830b1d427",
+    "multi_aspect_term_observed_matrix_v1.csv": "404286d96a09f31e9835e250a7660b293e75f17f5a26626f93235be05b578c26",
+    "multi_aspect_term_observed_taxonomy_v1.json": "970f23a922199676e04978250ea5f2492bed0e73f8678fe380022ab11953e2a1",
+    "multi_aspect_term_state_observed_manifest_v1.json": "007b7efc7812787bd783af5714a77abc142602d0ca1372f04f1adb64bc936e24",
+    "multi_aspect_term_state_observed_matrix_v1.csv": "22ad7790ca9fc7602d079d6d671fe1eb6e8a9f6c9989d835fe6aa5d007f22895",
+    "multi_aspect_term_state_observed_taxonomy_v1.json": "e8538c8ca76c50d72dcdaf6799141eab32bab20784c3206bf6cfbfcb2f6873fe"
+  },
+  "m0_mean_mae_log10_usd": 0.32176462332226646,
+  "outer_cv": {
+    "folds": 5,
+    "repeats": 20
+  },
+  "primary_candidate_k": 24,
+  "primary_incremental_bootstrap": {
+    "draws": 20000,
+    "estimand": "product-level mean reduction in absolute log10-price error (M0 minus M1), averaged across repeats",
+    "m1_lower_error_product_fraction": 0.48535564853556484,
+    "percentile_95_ci": [
+      0.0004308270888565756,
+      0.0053088552469895455
+    ],
+    "point_estimate": 0.0028656534810381474,
+    "relative_mae_reduction": 0.009227798529809605,
+    "two_sided_bootstrap_p_value": 0.0213
+  },
+  "primary_incremental_placebo": {
+    "draws": 50,
+    "empirical_one_sided_p_value_plus_one": 0.0196078431372549,
+    "observed_mae_reduction_vs_text": 0.002865653481038122,
+    "placebo_mean_mae_reduction": -0.000494121012071933,
+    "placebo_quantiles_2_5_50_97_5": [
+      -0.0008774705231296129,
+      -0.000492666911871914,
+      -8.378643435802012e-05
+    ]
+  },
+  "same_tree_hyperparameters": true,
+  "selection_boundary": "Base terms and candidate mechanisms are selected inside each outer training fold. Candidate mechanisms are ranked against inner-OOF residuals from the explicit-plus-base-term model.",
+  "status": "training_only_nested_incremental_evaluation_complete",
+  "test_rows_used": 0,
+  "test_targets_used": false,
+  "text_baseline_mean_mae_log10_usd": 0.31054573545151654,
+  "training_rows": 1912,
+  "tree_hyperparameters": {
+    "ccp_alpha": 0.0,
+    "max_depth": null,
+    "min_samples_leaf": 10
+  }
+}

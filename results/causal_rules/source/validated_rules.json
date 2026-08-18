@@ -1,0 +1,256 @@
+[
+  {
+    "association_confirmed_fdr_0_05": false,
+    "conditions": [
+      {
+        "feature": "implicit_score__term_state__global_scope_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__included_content_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__information_unresolved_listing_claim_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__report_unresolved_listing_claim_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      }
+    ],
+    "confirmation_bh_q_value": 0.10883797226265647,
+    "confirmation_comparison_support": 175,
+    "confirmation_coverage": 0.7712418300653595,
+    "confirmation_effect_95_ci": [
+      -0.26181864234804414,
+      -0.020777266614409887
+    ],
+    "confirmation_effect_inside_minus_outside": -0.141297954481227,
+    "confirmation_estimable_minimum_20_per_group": true,
+    "confirmation_inside_mean_residual": -0.008922104994755545,
+    "confirmation_outside_mean_residual": 0.13237584948647146,
+    "confirmation_raw_p_value": 0.021767594452531295,
+    "confirmation_support": 590,
+    "direction_replicated": true,
+    "discovery_comparison_support": 257,
+    "discovery_coverage": 0.7759372275501307,
+    "discovery_direction": "discount",
+    "discovery_direction_confidence": 0.4550561797752809,
+    "discovery_direction_lift": 1.052317415730337,
+    "discovery_effect_inside_minus_outside": -0.13241263810094706,
+    "discovery_inside_mean_residual": -0.033466588609574154,
+    "discovery_outside_mean_residual": 0.09894604949137291,
+    "discovery_rank": 1,
+    "discovery_raw_p_value": 0.006527641717296671,
+    "discovery_support": 890,
+    "ranking_score": 1.79758509392119,
+    "readable_conditions": [
+      "global scope with confirmed property is absent",
+      "included content with confirmed property is absent",
+      "information with unresolved listing claim is absent",
+      "report with unresolved listing claim is absent"
+    ],
+    "rule_id": "candidate_leaf_4"
+  },
+  {
+    "association_confirmed_fdr_0_05": false,
+    "conditions": [
+      {
+        "feature": "implicit_score__term_state__global_scope_confirmed_property_observed",
+        "operator": ">",
+        "threshold": 0.5
+      }
+    ],
+    "confirmation_bh_q_value": 0.3546258427601329,
+    "confirmation_comparison_support": 715,
+    "confirmation_coverage": 0.06535947712418301,
+    "confirmation_effect_95_ci": [
+      -0.12691551245624502,
+      0.42992467511814647
+    ],
+    "confirmation_effect_inside_minus_outside": 0.1515045813309507,
+    "confirmation_estimable_minimum_20_per_group": true,
+    "confirmation_inside_mean_residual": 0.1650032776011196,
+    "confirmation_outside_mean_residual": 0.013498696270168893,
+    "confirmation_raw_p_value": 0.2798393702038839,
+    "confirmation_support": 50,
+    "direction_replicated": true,
+    "discovery_comparison_support": 1082,
+    "discovery_coverage": 0.05666957279860506,
+    "discovery_direction": "premium",
+    "discovery_direction_confidence": 0.6307692307692307,
+    "discovery_direction_lift": 1.2805173587474472,
+    "discovery_effect_inside_minus_outside": 0.2048626043643492,
+    "discovery_inside_mean_residual": 0.1894552822833371,
+    "discovery_outside_mean_residual": -0.015407322081012085,
+    "discovery_rank": 2,
+    "discovery_raw_p_value": 0.0746990088491322,
+    "discovery_support": 65,
+    "ranking_score": 1.0418132291430287,
+    "readable_conditions": [
+      "global scope with confirmed property is present"
+    ],
+    "rule_id": "candidate_leaf_8"
+  },
+  {
+    "association_confirmed_fdr_0_05": false,
+    "conditions": [
+      {
+        "feature": "implicit_score__term_state__global_scope_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__included_content_confirmed_property_observed",
+        "operator": ">",
+        "threshold": 0.5
+      }
+    ],
+    "confirmation_bh_q_value": 0.843572637739805,
+    "confirmation_comparison_support": 721,
+    "confirmation_coverage": 0.05751633986928104,
+    "confirmation_effect_95_ci": [
+      -0.16890106030850818,
+      0.20589588283700153
+    ],
+    "confirmation_effect_inside_minus_outside": 0.018497411264246665,
+    "confirmation_estimable_minimum_20_per_group": true,
+    "confirmation_inside_mean_residual": 0.04083446435914847,
+    "confirmation_outside_mean_residual": 0.022337053094901804,
+    "confirmation_raw_p_value": 0.843572637739805,
+    "confirmation_support": 44,
+    "direction_replicated": true,
+    "discovery_comparison_support": 1088,
+    "discovery_coverage": 0.05143853530950305,
+    "discovery_direction": "premium",
+    "discovery_direction_confidence": 0.5084745762711864,
+    "discovery_direction_lift": 1.032248387580621,
+    "discovery_effect_inside_minus_outside": 0.17723980236293235,
+    "discovery_inside_mean_residual": 0.16432500072156253,
+    "discovery_outside_mean_residual": -0.012914801641369808,
+    "discovery_rank": 3,
+    "discovery_raw_p_value": 0.014909126501079215,
+    "discovery_support": 59,
+    "ranking_score": 0.6922397055625984,
+    "readable_conditions": [
+      "global scope with confirmed property is absent",
+      "included content with confirmed property is present"
+    ],
+    "rule_id": "candidate_leaf_7"
+  },
+  {
+    "association_confirmed_fdr_0_05": false,
+    "conditions": [
+      {
+        "feature": "implicit_score__term_state__global_scope_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__included_content_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__information_unresolved_listing_claim_observed",
+        "operator": ">",
+        "threshold": 0.5
+      }
+    ],
+    "confirmation_bh_q_value": 0.3546258427601329,
+    "confirmation_comparison_support": 724,
+    "confirmation_coverage": 0.05359477124183006,
+    "confirmation_effect_95_ci": [
+      -0.09183864799811056,
+      0.3062870943439915
+    ],
+    "confirmation_effect_inside_minus_outside": 0.10722422317294045,
+    "confirmation_estimable_minimum_20_per_group": true,
+    "confirmation_inside_mean_residual": 0.12487852194828186,
+    "confirmation_outside_mean_residual": 0.01765429877534141,
+    "confirmation_raw_p_value": 0.28370067420810635,
+    "confirmation_support": 41,
+    "direction_replicated": true,
+    "discovery_comparison_support": 1092,
+    "discovery_coverage": 0.04795117698343505,
+    "discovery_direction": "premium",
+    "discovery_direction_confidence": 0.6,
+    "discovery_direction_lift": 1.2180530973451327,
+    "discovery_effect_inside_minus_outside": 0.07504788597395926,
+    "discovery_inside_mean_residual": 0.0676514057021145,
+    "discovery_outside_mean_residual": -0.007396480271844751,
+    "discovery_rank": 4,
+    "discovery_raw_p_value": 0.41569129221928947,
+    "discovery_support": 55,
+    "ranking_score": 0.33394201105188265,
+    "readable_conditions": [
+      "global scope with confirmed property is absent",
+      "included content with confirmed property is absent",
+      "information with unresolved listing claim is present"
+    ],
+    "rule_id": "candidate_leaf_6"
+  },
+  {
+    "association_confirmed_fdr_0_05": false,
+    "conditions": [
+      {
+        "feature": "implicit_score__term_state__global_scope_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__included_content_confirmed_property_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__information_unresolved_listing_claim_observed",
+        "operator": "<=",
+        "threshold": 0.5
+      },
+      {
+        "feature": "implicit_score__term_state__report_unresolved_listing_claim_observed",
+        "operator": ">",
+        "threshold": 0.5
+      }
+    ],
+    "confirmation_bh_q_value": 0.2839875354338634,
+    "confirmation_comparison_support": 725,
+    "confirmation_coverage": 0.05228758169934641,
+    "confirmation_effect_95_ci": [
+      -0.046355796395900484,
+      0.41898126549884374
+    ],
+    "confirmation_effect_inside_minus_outside": 0.18631273455147163,
+    "confirmation_estimable_minimum_20_per_group": true,
+    "confirmation_inside_mean_residual": 0.199971848709861,
+    "confirmation_outside_mean_residual": 0.013659114158389371,
+    "confirmation_raw_p_value": 0.11359501417354537,
+    "confirmation_support": 40,
+    "direction_replicated": false,
+    "discovery_comparison_support": 1069,
+    "discovery_coverage": 0.06800348735832606,
+    "discovery_direction": "discount",
+    "discovery_direction_confidence": 0.38461538461538464,
+    "discovery_direction_lift": 0.8894230769230769,
+    "discovery_effect_inside_minus_outside": -7.193011672061841e-05,
+    "discovery_inside_mean_residual": -0.0038648844272122997,
+    "discovery_outside_mean_residual": -0.0037929543104916813,
+    "discovery_rank": 5,
+    "discovery_raw_p_value": 0.9992752948968782,
+    "discovery_support": 78,
+    "ranking_score": 0.0002443344576782892,
+    "readable_conditions": [
+      "global scope with confirmed property is absent",
+      "included content with confirmed property is absent",
+      "information with unresolved listing claim is absent",
+      "report with unresolved listing claim is present"
+    ],
+    "rule_id": "candidate_leaf_5"
+  }
+]

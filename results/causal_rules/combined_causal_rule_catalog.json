@@ -1,0 +1,295 @@
+[
+  {
+    "agreement_mcnemar": {
+      "control_only": 2,
+      "discordant": 21,
+      "treatment_only": 19,
+      "two_sided_exact_p_value": 0.00022125244140625
+    },
+    "agreement_rate_effect": 0.2833333333333333,
+    "both_arm_agreement_pairs": 24,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": true,
+    "causal_negotiated_price_confirmed": true,
+    "causal_wtp_confirmed": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.43333333333333335,
+    "evidence_tier": "strict_causal_negotiated_price_rule",
+    "field_scope": "coverage, delivery, format, identifier, update",
+    "mean_relative_negotiated_price_effect": 0.017498579175703632,
+    "mean_relative_wtp_effect": 0.05971627381815092,
+    "mean_value_update_effect": 0.4150000000000001,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 60,
+    "paper_safe_claim": "Within the controlled simulator, confirming task fit causally increases effective WTP and agreement probability and raises the negotiated price among pairs agreeing under both arms.",
+    "predecessor_primary_rule_confirmed": true,
+    "price_log10_95_ci": [
+      0.001003099499854674,
+      0.014170672295074705
+    ],
+    "price_sign_flip_p_value": 0.037439251214975704,
+    "recomputed_price_sign_flip_p_value_audit": 0.03849923001539969,
+    "rule_id": "causal_task_fit_match",
+    "rule_statement": "IF a buyer has a prespecified task requirement AND grounded evidence confirms that the product property satisfies it, THEN effective willingness to pay increases relative to leaving the property unresolved.",
+    "source_experiment": "independent_task_fit_confirmation_v3",
+    "treatment_agreement_rate": 0.7166666666666667,
+    "wtp_log10_95_ci": [
+      0.022660527065348365,
+      0.02771868042814934
+    ],
+    "wtp_log10_effect": 0.025189603746748848,
+    "wtp_sign_flip_p_value": 1.999960000799984e-05
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 6,
+      "discordant": 15,
+      "treatment_only": 9,
+      "two_sided_exact_p_value": 0.6072387695312499
+    },
+    "agreement_rate_effect": 0.04999999999999999,
+    "both_arm_agreement_pairs": 17,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": false,
+    "causal_negotiated_price_confirmed": false,
+    "causal_wtp_confirmed": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.38333333333333336,
+    "evidence_tier": "causal_wtp_rule",
+    "field_scope": "coverage, delivery, format, identifier, update",
+    "mean_relative_negotiated_price_effect": -0.009817913350386398,
+    "mean_relative_wtp_effect": -0.019604883531775696,
+    "mean_value_update_effect": -0.14166666666666666,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 60,
+    "paper_safe_claim": "Within the controlled simulator, confirming task mismatch causally lowers effective WTP; agreement and negotiated-price effects are not confirmed.",
+    "predecessor_primary_rule_confirmed": true,
+    "price_log10_95_ci": [
+      -0.009159370809202672,
+      -0.00018100034948105603
+    ],
+    "price_sign_flip_p_value": 0.10743785124297514,
+    "recomputed_price_sign_flip_p_value_audit": 0.11075778484430311,
+    "rule_id": "causal_task_fit_mismatch",
+    "rule_statement": "IF a buyer has a prespecified task requirement AND grounded evidence confirms that the product property does not satisfy it, THEN effective willingness to pay decreases relative to leaving the property unresolved.",
+    "source_experiment": "independent_task_fit_confirmation_v3",
+    "treatment_agreement_rate": 0.43333333333333335,
+    "wtp_log10_95_ci": [
+      -0.01143142659993019,
+      -0.005766294833593112
+    ],
+    "wtp_log10_effect": -0.008598860716761652,
+    "wtp_sign_flip_p_value": 1.999960000799984e-05
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 1,
+      "discordant": 12,
+      "treatment_only": 11,
+      "two_sided_exact_p_value": 0.00634765625
+    },
+    "agreement_rate_effect": 0.25,
+    "both_arm_agreement_pairs": 18,
+    "catalog_status": "superseded_by_strict_confirmation",
+    "causal_agreement_confirmed": true,
+    "causal_negotiated_price_confirmed": false,
+    "causal_wtp_confirmed": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.475,
+    "evidence_tier": "causal_transaction_rule",
+    "exploratory_price_fdr_pass": false,
+    "field_scope": "coverage",
+    "mean_relative_negotiated_price_effect": 0.016969800491313025,
+    "mean_relative_wtp_effect": 0.03302836808257159,
+    "mean_value_update_effect": 0.2325,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 40,
+    "paper_safe_claim": "Within the controlled simulator, confirming coverage-task fit causally increases effective WTP and agreement probability; a negotiated-price effect is not confirmed.",
+    "predecessor_primary_rule_confirmed": true,
+    "price_bh_q_value": 0.18545629087418253,
+    "price_log10_95_ci": [
+      0.0011577391153342576,
+      0.014701951438429001
+    ],
+    "price_sign_flip_p_value": 0.061818763624727505,
+    "rule_id": "causal_coverage_match",
+    "rule_statement": "IF grounded evidence confirms that product coverage meets the buyer's prespecified task requirement, THEN effective willingness to pay increases.",
+    "source_experiment": "supplementary_rule_confirmation_v1",
+    "superseded_by_rule_id": "causal_coverage_match_price_premium",
+    "treatment_agreement_rate": 0.725,
+    "wtp_bh_q_value": 1.999960000799984e-05,
+    "wtp_log10_95_ci": [
+      0.011380845066302183,
+      0.01684365069812724
+    ],
+    "wtp_log10_effect": 0.014112247882214712,
+    "wtp_sign_flip_p_value": 1.999960000799984e-05
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 2,
+      "discordant": 10,
+      "treatment_only": 8,
+      "two_sided_exact_p_value": 0.109375
+    },
+    "agreement_rate_effect": 0.15000000000000002,
+    "both_arm_agreement_pairs": 17,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": false,
+    "causal_negotiated_price_confirmed": false,
+    "causal_wtp_confirmed": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.475,
+    "evidence_tier": "causal_wtp_rule",
+    "exploratory_price_fdr_pass": false,
+    "field_scope": "identifier",
+    "mean_relative_negotiated_price_effect": 0.006753899580619338,
+    "mean_relative_wtp_effect": 0.05971627381815092,
+    "mean_value_update_effect": 0.41500000000000004,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 40,
+    "paper_safe_claim": "Within the controlled simulator, the identifier contrast causally changes effective WTP in the expected direction; agreement and negotiated-price effects are not confirmed.",
+    "predecessor_primary_rule_confirmed": true,
+    "price_bh_q_value": 0.5983880322393552,
+    "price_log10_95_ci": [
+      -0.007826157270467458,
+      0.01345540862863098
+    ],
+    "price_sign_flip_p_value": 0.5983880322393552,
+    "rule_id": "causal_identifier_match",
+    "rule_statement": "IF grounded evidence confirms that identifier content meets the buyer's prespecified linkage requirement, THEN effective willingness to pay increases.",
+    "source_experiment": "supplementary_rule_confirmation_v1",
+    "treatment_agreement_rate": 0.625,
+    "wtp_bh_q_value": 1.999960000799984e-05,
+    "wtp_log10_95_ci": [
+      0.02260994553172036,
+      0.027465772760009277
+    ],
+    "wtp_log10_effect": 0.025189603746748845,
+    "wtp_sign_flip_p_value": 1.999960000799984e-05
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 7,
+      "discordant": 9,
+      "treatment_only": 2,
+      "two_sided_exact_p_value": 0.1796875
+    },
+    "agreement_rate_effect": -0.125,
+    "both_arm_agreement_pairs": 22,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": false,
+    "causal_negotiated_price_confirmed": false,
+    "causal_wtp_confirmed": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.725,
+    "evidence_tier": "causal_wtp_rule",
+    "exploratory_price_fdr_pass": false,
+    "field_scope": "customization",
+    "mean_relative_negotiated_price_effect": -0.007505470905537215,
+    "mean_relative_wtp_effect": -0.0193764870555746,
+    "mean_value_update_effect": -0.14,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 40,
+    "paper_safe_claim": "Within the controlled simulator, the customization contrast causally changes effective WTP in the expected direction; agreement and negotiated-price effects are not confirmed.",
+    "predecessor_primary_rule_confirmed": true,
+    "price_bh_q_value": 0.5983880322393552,
+    "price_log10_95_ci": [
+      -0.011059937027617017,
+      0.003987468574806518
+    ],
+    "price_sign_flip_p_value": 0.43071138577228457,
+    "rule_id": "causal_customization_mismatch",
+    "rule_statement": "IF grounded evidence confirms a customization limitation that conflicts with the buyer's prespecified requirement, THEN effective willingness to pay decreases.",
+    "source_experiment": "supplementary_rule_confirmation_v1",
+    "treatment_agreement_rate": 0.6,
+    "wtp_bh_q_value": 1.999960000799984e-05,
+    "wtp_log10_95_ci": [
+      -0.011229100465418144,
+      -0.0051593164300569785
+    ],
+    "wtp_log10_effect": -0.008497697649505621,
+    "wtp_sign_flip_p_value": 1.999960000799984e-05
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 1,
+      "discordant": 20,
+      "treatment_only": 19,
+      "two_sided_exact_p_value": 4.00543212890625e-05
+    },
+    "agreement_rate_effect": 0.2249999999999999,
+    "bonferroni_alpha": 0.025,
+    "both_arm_agreement_pairs": 44,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": true,
+    "causal_negotiated_price_confirmed": true,
+    "causal_wtp_confirmed": true,
+    "conditional_price_estimand": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.5625,
+    "control_integrity": 1.0,
+    "evidence_tier": "strict_causal_negotiated_price_rule",
+    "field_scope": "coverage",
+    "mean_relative_negotiated_price_effect": 0.0240397166325376,
+    "mean_relative_wtp_effect": 0.0357390066558842,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 80,
+    "paper_safe_claim": "Within the controlled LLM-agent simulator, confirming this prespecified task-fit property causally increases effective WTP and agreement probability and raises negotiated price conditional on agreement under both arms.",
+    "price_log10_95_ci": [
+      0.005061895335091688,
+      0.016175942401954663
+    ],
+    "price_sign_flip_p_value": 0.0004099959000409,
+    "rule_id": "causal_coverage_match_price_premium",
+    "rule_statement": "IF grounded evidence confirms that product coverage meets the buyer's prespecified task requirement, THEN effective willingness to pay and agreement probability increase, and the negotiated price among pairs agreeing under both arms rises relative to leaving coverage unresolved.",
+    "source_experiment": "independent_extension_confirmation_v1",
+    "supersedes_rule_id": "causal_coverage_match",
+    "treatment_agreement_rate": 0.7875,
+    "wtp_log10_95_ci": [
+      0.013277652577352564,
+      0.01729888450077932
+    ],
+    "wtp_sign_flip_p_value": 9.99990000099999e-06
+  },
+  {
+    "agreement_mcnemar": {
+      "control_only": 2,
+      "discordant": 24,
+      "treatment_only": 22,
+      "two_sided_exact_p_value": 3.588199615478516e-05
+    },
+    "agreement_rate_effect": 0.25,
+    "bonferroni_alpha": 0.025,
+    "both_arm_agreement_pairs": 36,
+    "catalog_status": "active",
+    "causal_agreement_confirmed": true,
+    "causal_negotiated_price_confirmed": true,
+    "causal_wtp_confirmed": true,
+    "conditional_price_estimand": true,
+    "contrast": "confirmed grounded property versus unresolved property",
+    "control_agreement_rate": 0.475,
+    "control_integrity": 1.0,
+    "evidence_tier": "strict_causal_negotiated_price_rule",
+    "field_scope": "update cadence",
+    "mean_relative_negotiated_price_effect": 0.0187083632536955,
+    "mean_relative_wtp_effect": 0.055835561728206,
+    "mechanism_family": "grounded_task_fit_confirmation",
+    "pairs": 80,
+    "paper_safe_claim": "Within the controlled LLM-agent simulator, confirming this prespecified task-fit property causally increases effective WTP and agreement probability and raises negotiated price conditional on agreement under both arms.",
+    "price_log10_95_ci": [
+      0.0029100476443727143,
+      0.013461905107947935
+    ],
+    "price_sign_flip_p_value": 0.0048399516004839,
+    "rule_id": "causal_update_cadence_match_price_premium",
+    "rule_statement": "IF grounded evidence confirms that the product's update cadence meets the buyer's prespecified refresh requirement, THEN effective willingness to pay and agreement probability increase, and the negotiated price among pairs agreeing under both arms rises relative to leaving update cadence unresolved.",
+    "source_experiment": "independent_extension_confirmation_v1",
+    "treatment_agreement_rate": 0.725,
+    "wtp_log10_95_ci": [
+      0.022002967128184225,
+      0.025113731446306818
+    ],
+    "wtp_sign_flip_p_value": 9.99990000099999e-06
+  }
+]

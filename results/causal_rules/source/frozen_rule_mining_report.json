@@ -1,0 +1,116 @@
+{
+  "bh_confirmed_association_rule_count": 0,
+  "candidate_rule_count": 5,
+  "causal_status": "Validated paths are post-selection associational pricing rules and causal candidates. Causal confirmation requires controlled intervention on the mechanism while holding the product and agent pair fixed.",
+  "confirmed_association_rule_ids": [],
+  "development_validation": {
+    "bootstrap": {
+      "draws": 20000,
+      "estimand": "product-level mean reduction in absolute log10-price error (M0 minus M1), averaged across repeats",
+      "m1_lower_error_product_fraction": 0.48535564853556484,
+      "percentile_95_ci": [
+        0.0004308270888565756,
+        0.0053088552469895455
+      ],
+      "point_estimate": 0.0028656534810381474,
+      "relative_mae_reduction": 0.009227798529809605,
+      "two_sided_bootstrap_p_value": 0.0213
+    },
+    "incremental_relative_reduction_vs_text": 0.00922779852980964,
+    "placebo": {
+      "draws": 50,
+      "empirical_one_sided_p_value_plus_one": 0.0196078431372549,
+      "observed_mae_reduction_vs_text": 0.002865653481038122,
+      "placebo_mean_mae_reduction": -0.000494121012071933,
+      "placebo_quantiles_2_5_50_97_5": [
+        -0.0008774705231296129,
+        -0.000492666911871914,
+        -8.378643435802012e-05
+      ]
+    },
+    "total_relative_reduction_vs_m0": 0.04377280885127457
+  },
+  "direction_replicated_rule_count": 4,
+  "estimable_confirmation_rule_count": 5,
+  "frozen_configuration": {
+    "base_term_k": 12,
+    "candidate_mechanism_k": 24,
+    "mechanism_encoding": "term-by-evidence-state observed indicator only",
+    "prediction_tree_hyperparameters": {
+      "ccp_alpha": 0.0,
+      "max_depth": null,
+      "min_samples_leaf": 10
+    },
+    "rule_tree_max_depth": 4,
+    "rule_tree_min_samples_leaf": 50,
+    "same_m0_m1_tree_hyperparameters": true
+  },
+  "input_hashes": {
+    "financial.csv": "1b012c02155ac355620d5fdb092bfb94392af2bf5045f14704406560efc00d26",
+    "financial_train_test_split.csv": "98150e610ddbd52d448f7e757421ae039d4a850a53130d40462ecf1531f64ec2",
+    "incremental_evaluation_report.json": "71931f30c1fce5aa7d36167974178584610cef19e7d1210e0036c7a2391d22df",
+    "m0_decision_tree.joblib": "681565f3cb7a8aa8910f768596ae73eb7baa6affb9802326551a103830b1d427",
+    "multi_aspect_term_observed_matrix_v1.csv": "404286d96a09f31e9835e250a7660b293e75f17f5a26626f93235be05b578c26",
+    "multi_aspect_term_observed_taxonomy_v1.json": "970f23a922199676e04978250ea5f2492bed0e73f8678fe380022ab11953e2a1",
+    "multi_aspect_term_state_observed_matrix_v1.csv": "22ad7790ca9fc7602d079d6d671fe1eb6e8a9f6c9989d835fe6aa5d007f22895",
+    "multi_aspect_term_state_observed_taxonomy_v1.json": "e8538c8ca76c50d72dcdaf6799141eab32bab20784c3206bf6cfbfcb2f6873fe",
+    "nested_selection_rankings.csv": "ba33c1ad7790dac0b847631d773744634f9b74e938254998743e596b02a97a18"
+  },
+  "rule_quality_adaptation": {
+    "confidence": "within-path fraction whose residual direction matches the rule",
+    "confirmation": "same effect direction plus BH q <= 0.05 on the confirmation split",
+    "coverage": "fraction of products satisfying a tree path",
+    "pca_confidence_used": false,
+    "reason": "PCA confidence is defined for incomplete knowledge graphs, not continuous-price residuals.",
+    "support": "number of products satisfying a tree path"
+  },
+  "rule_split": {
+    "confirmation_rows": 765,
+    "discovery_rows": 1147,
+    "seed": 20260816,
+    "stratified_by": "split_stratum"
+  },
+  "selected_discovery_base_terms": [
+    "context_term__report",
+    "context_term__service",
+    "context_term__global_scope",
+    "context_term__contact",
+    "context_term__level",
+    "context_term__list",
+    "context_term__year_wording",
+    "context_term__users",
+    "context_term__business",
+    "context_term__analysis",
+    "context_term__need",
+    "context_term__scale_wording"
+  ],
+  "selected_discovery_candidate_mechanisms": [
+    "score__term_state__report_confirmed_property",
+    "score__term_state__attributes_bounded_limitation",
+    "score__term_state__offer_confirmed_property",
+    "score__term_state__global_scope_bounded_limitation",
+    "score__term_state__level_confirmed_property",
+    "score__term_state__report_unresolved_listing_claim",
+    "score__term_state__global_scope_confirmed_property",
+    "score__term_state__requirements_confirmed_property",
+    "score__term_state__included_content_confirmed_property",
+    "score__term_state__offer_bounded_limitation",
+    "score__term_state__requirements_unresolved_listing_claim",
+    "score__term_state__analysis_bounded_limitation",
+    "score__term_state__research_bounded_limitation",
+    "score__term_state__coverage_unresolved_listing_claim",
+    "score__term_state__consumer_unresolved_listing_claim",
+    "score__term_state__need_confirmed_property",
+    "score__term_state__type_bounded_limitation",
+    "score__term_state__insights_bounded_limitation",
+    "score__term_state__best_unresolved_listing_claim",
+    "score__term_state__customization_bounded_limitation",
+    "score__term_state__level_unresolved_listing_claim",
+    "score__term_state__name_confirmed_property",
+    "score__term_state__information_unresolved_listing_claim",
+    "score__term_state__business_fit_positive"
+  ],
+  "status": "frozen_rule_mining_complete",
+  "test_rows_used": 0,
+  "test_targets_used": false
+}

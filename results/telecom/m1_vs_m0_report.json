@@ -1,0 +1,530 @@
+{
+  "claim_scope": {
+    "causal_rule_status": "Predictive M1 comparison does not by itself establish causal rules; controlled interventions remain separate evidence.",
+    "m1_vs_m0_primary_mae_supported": true,
+    "m1_vs_text_primary_mae_supported": false
+  },
+  "development": {
+    "base_k": 12,
+    "candidate_k": 24,
+    "inner_residual_cv_folds": 4,
+    "m0_mean_metrics": {
+      "mae_log10_usd": 0.34656689897824167,
+      "median_absolute_error_log10_usd": 0.16896107936177737,
+      "r2": 0.728476136592197,
+      "rmse_log10_usd": 0.5850696248517735
+    },
+    "m1_mean_metrics": {
+      "mae_log10_usd": 0.35666751000812635,
+      "median_absolute_error_log10_usd": 0.16948305876065625,
+      "r2": 0.7071406912822014,
+      "rmse_log10_usd": 0.6075080151815383
+    },
+    "m1_vs_m0": {
+      "absolute_mae_reduction": 0.0036410210512507935,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.3041937899620198,
+        "median_absolute_error_log10_usd": 0.1434317449268263,
+        "r2": 0.7914751681084018,
+        "rmse_log10_usd": 0.5132582081085697
+      },
+      "model_lower_error_product_fraction": 0.5166666666666667,
+      "model_metrics": {
+        "mae_log10_usd": 0.300552768910769,
+        "median_absolute_error_log10_usd": 0.12916302296876248,
+        "r2": 0.79731249078016,
+        "rmse_log10_usd": 0.5060232905548091
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "model_lower_error_product_fraction": 0.5166666666666667,
+        "percentile_95_ci": [
+          -0.020060313931185174,
+          0.02656211493193813
+        ],
+        "point_estimate": 0.0036410210512507935,
+        "relative_mae_reduction": 0.01196941282629535,
+        "two_sided_bootstrap_p_value": 0.7498
+      },
+      "primary_support_rule_passed": false,
+      "relative_mae_reduction": 0.01196941282629535,
+      "two_sided_sign_flip_p_value": 0.7633247335053299
+    },
+    "m1_vs_permuted": {
+      "absolute_mae_reduction": 0.0012629288927041996,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.3018156978034732,
+        "median_absolute_error_log10_usd": 0.1324676431163807,
+        "r2": 0.7966165210717018,
+        "rmse_log10_usd": 0.5068913141521716
+      },
+      "model_lower_error_product_fraction": 0.11190476190476191,
+      "model_metrics": {
+        "mae_log10_usd": 0.300552768910769,
+        "median_absolute_error_log10_usd": 0.12916302296876248,
+        "r2": 0.79731249078016,
+        "rmse_log10_usd": 0.5060232905548091
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "model_lower_error_product_fraction": 0.11190476190476191,
+        "percentile_95_ci": [
+          -0.0001893629966349331,
+          0.002728807605846518
+        ],
+        "point_estimate": 0.0012629288927041996,
+        "relative_mae_reduction": 0.004184437396382721,
+        "two_sided_bootstrap_p_value": 0.084
+      },
+      "primary_support_rule_passed": false,
+      "relative_mae_reduction": 0.004184437396382721,
+      "two_sided_sign_flip_p_value": 0.08575828483430331
+    },
+    "m1_vs_text": {
+      "absolute_mae_reduction": -0.003206652978245715,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.2973461159325232,
+        "median_absolute_error_log10_usd": 0.13052996853952903,
+        "r2": 0.8003045763638902,
+        "rmse_log10_usd": 0.5022744302865535
+      },
+      "model_lower_error_product_fraction": 0.29285714285714287,
+      "model_metrics": {
+        "mae_log10_usd": 0.300552768910769,
+        "median_absolute_error_log10_usd": 0.12916302296876248,
+        "r2": 0.79731249078016,
+        "rmse_log10_usd": 0.5060232905548091
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "model_lower_error_product_fraction": 0.29285714285714287,
+        "percentile_95_ci": [
+          -0.005458804678711179,
+          -0.0011496551301799938
+        ],
+        "point_estimate": -0.003206652978245715,
+        "relative_mae_reduction": -0.01078424370262634,
+        "two_sided_bootstrap_p_value": 0.0012
+      },
+      "primary_support_rule_passed": false,
+      "relative_mae_reduction": -0.01078424370262634,
+      "two_sided_sign_flip_p_value": 0.002659946801063979
+    },
+    "outer_cv": {
+      "folds": 5,
+      "repeats": 20
+    },
+    "repeat_mae_reductions": {
+      "m1_vs_m0": [
+        0.010524263400015443,
+        -0.016194918560274996,
+        -0.03423542313891886,
+        -0.00702296024018656,
+        -0.02865069281552335,
+        -0.0015016131519495213,
+        -0.021700017568993035,
+        -0.026434927890679916,
+        -0.003818174643349048,
+        -0.008397149345906685,
+        -0.023109935049476615,
+        0.013755678597076215,
+        -0.009191755130353196,
+        0.024520165399703753,
+        -0.027541048090105325,
+        -0.007077458068006859,
+        -0.01669589594339027,
+        0.009036206786009027,
+        -0.011231819947644606,
+        -0.017044745195739786
+      ],
+      "m1_vs_text": [
+        -0.0004172488893154358,
+        -0.010945774754258564,
+        -0.023539668861847995,
+        -0.0008778482608697846,
+        -0.0021842473698217013,
+        -0.0035511294805165017,
+        0.0006303422903400357,
+        -0.0013489893464361802,
+        -0.0033699095052151518,
+        -0.0009079281962068864,
+        -0.00022022921403308526,
+        -0.0011549087820011406,
+        -0.0006460834292706941,
+        -0.002681194567780709,
+        -0.0013963694456124998,
+        0.0006428292848889572,
+        -0.0020032060147575637,
+        -0.008157503252011644,
+        0.0009297200177475484,
+        -0.0010704385928220206
+      ]
+    },
+    "repeats_m1_better": {
+      "total": 20,
+      "vs_m0": 4,
+      "vs_text": 3
+    },
+    "same_tree_hyperparameters": true,
+    "selection_stability": {
+      "base_top": [
+        {
+          "canonical_id": "context_term__analytics",
+          "selected_folds": 100
+        },
+        {
+          "canonical_id": "context_term__coverage",
+          "selected_folds": 100
+        },
+        {
+          "canonical_id": "context_term__sources",
+          "selected_folds": 85
+        },
+        {
+          "canonical_id": "context_term__attributes",
+          "selected_folds": 84
+        },
+        {
+          "canonical_id": "context_term__business",
+          "selected_folds": 83
+        },
+        {
+          "canonical_id": "context_term__country",
+          "selected_folds": 75
+        },
+        {
+          "canonical_id": "context_term__users",
+          "selected_folds": 72
+        },
+        {
+          "canonical_id": "context_term__location",
+          "selected_folds": 56
+        },
+        {
+          "canonical_id": "context_term__storage",
+          "selected_folds": 55
+        },
+        {
+          "canonical_id": "context_term__customization",
+          "selected_folds": 53
+        },
+        {
+          "canonical_id": "context_term__use",
+          "selected_folds": 48
+        },
+        {
+          "canonical_id": "context_term__provided_content",
+          "selected_folds": 44
+        },
+        {
+          "canonical_id": "context_term__consumer",
+          "selected_folds": 39
+        },
+        {
+          "canonical_id": "context_term__scale_wording",
+          "selected_folds": 39
+        },
+        {
+          "canonical_id": "context_term__state",
+          "selected_folds": 32
+        },
+        {
+          "canonical_id": "context_term__name",
+          "selected_folds": 30
+        },
+        {
+          "canonical_id": "context_term__contact",
+          "selected_folds": 28
+        },
+        {
+          "canonical_id": "context_term__included_content",
+          "selected_folds": 19
+        },
+        {
+          "canonical_id": "context_term__service",
+          "selected_folds": 18
+        },
+        {
+          "canonical_id": "context_term__report",
+          "selected_folds": 15
+        }
+      ],
+      "candidate_top": [
+        {
+          "canonical_id": "score__term_state__provided_content_unresolved_listing_claim",
+          "selected_folds": 79
+        },
+        {
+          "canonical_id": "score__term_state__market_confirmed_property",
+          "selected_folds": 79
+        },
+        {
+          "canonical_id": "score__term_state__consumer_unresolved_listing_claim",
+          "selected_folds": 76
+        },
+        {
+          "canonical_id": "score__term_state__included_content_unresolved_listing_claim",
+          "selected_folds": 70
+        },
+        {
+          "canonical_id": "score__term_state__use_confirmed_property",
+          "selected_folds": 70
+        },
+        {
+          "canonical_id": "score__term_state__storage_unresolved_listing_claim",
+          "selected_folds": 66
+        },
+        {
+          "canonical_id": "score__term_state__level_unresolved_listing_claim",
+          "selected_folds": 61
+        },
+        {
+          "canonical_id": "score__term_state__provided_content_confirmed_property",
+          "selected_folds": 56
+        },
+        {
+          "canonical_id": "score__term_state__name_bounded_limitation",
+          "selected_folds": 55
+        },
+        {
+          "canonical_id": "score__term_state__need_confirmed_property",
+          "selected_folds": 50
+        },
+        {
+          "canonical_id": "score__term_state__time_bounded_limitation",
+          "selected_folds": 49
+        },
+        {
+          "canonical_id": "score__term_state__service_confirmed_property",
+          "selected_folds": 47
+        },
+        {
+          "canonical_id": "score__term_state__provided_content_bounded_limitation",
+          "selected_folds": 47
+        },
+        {
+          "canonical_id": "score__term_state__scale_wording_unresolved_listing_claim",
+          "selected_folds": 44
+        },
+        {
+          "canonical_id": "score__term_state__attributes_mixed_evidence",
+          "selected_folds": 42
+        },
+        {
+          "canonical_id": "score__term_state__attributes_confirmed_property",
+          "selected_folds": 41
+        },
+        {
+          "canonical_id": "score__term_state__coverage_unresolved_listing_claim",
+          "selected_folds": 38
+        },
+        {
+          "canonical_id": "score__term_state__business_confirmed_property",
+          "selected_folds": 37
+        },
+        {
+          "canonical_id": "score__term_state__company_bounded_limitation",
+          "selected_folds": 36
+        },
+        {
+          "canonical_id": "score__term_state__worldwide_scope_confirmed_property",
+          "selected_folds": 36
+        },
+        {
+          "canonical_id": "score__term_state__availability_unresolved_listing_claim",
+          "selected_folds": 34
+        },
+        {
+          "canonical_id": "score__term_state__use_unresolved_listing_claim",
+          "selected_folds": 30
+        },
+        {
+          "canonical_id": "score__term_state__worldwide_scope_unresolved_listing_claim",
+          "selected_folds": 29
+        },
+        {
+          "canonical_id": "score__term_state__business_bounded_limitation",
+          "selected_folds": 28
+        },
+        {
+          "canonical_id": "score__term_state__year_wording_unresolved_listing_claim",
+          "selected_folds": 28
+        },
+        {
+          "canonical_id": "score__term_state__time_confirmed_property",
+          "selected_folds": 27
+        },
+        {
+          "canonical_id": "score__term_state__list_bounded_limitation",
+          "selected_folds": 26
+        },
+        {
+          "canonical_id": "score__term_state__type_mixed_evidence",
+          "selected_folds": 26
+        },
+        {
+          "canonical_id": "score__term_state__worldwide_scope_bounded_limitation",
+          "selected_folds": 26
+        },
+        {
+          "canonical_id": "score__term_state__country_bounded_limitation",
+          "selected_folds": 25
+        }
+      ]
+    },
+    "status": "telecom_training_nested_repeated_cv_complete",
+    "support_rule": "max(5, ceil((15/1912) * n_fit))",
+    "test_rows_used": 0,
+    "test_targets_used": false,
+    "text_mean_metrics": {
+      "mae_log10_usd": 0.3535540206896364,
+      "median_absolute_error_log10_usd": 0.16656098126468485,
+      "r2": 0.7121317771211648,
+      "rmse_log10_usd": 0.6025301237207878
+    },
+    "training_rows": 420,
+    "tree_hyperparameters": {
+      "ccp_alpha": 0.0,
+      "max_depth": 10,
+      "min_samples_leaf": 10
+    }
+  },
+  "domain": "Telecom",
+  "feature_configuration": {
+    "base_taxonomy_size": 48,
+    "base_terms_per_fold": 12,
+    "candidate_taxonomy_size": 133,
+    "explicit_features": 35,
+    "mechanisms_per_fold": 24,
+    "selection_nested_in_training_folds": true,
+    "support_rule": "max(5, ceil((15/1912) * n_fit))"
+  },
+  "heldout_test": {
+    "m1_vs_m0": {
+      "absolute_mae_reduction": 0.0678166421663045,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.315838991973473,
+        "median_absolute_error_log10_usd": 0.09853825871671074,
+        "r2": 0.7215608747778899,
+        "rmse_log10_usd": 0.5728543264752679
+      },
+      "model_lower_error_product_fraction": 0.6320754716981132,
+      "model_metrics": {
+        "mae_log10_usd": 0.24802234980716847,
+        "median_absolute_error_log10_usd": 0.07592370996927178,
+        "r2": 0.778306632702931,
+        "rmse_log10_usd": 0.5111582999744456
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "model_lower_error_product_fraction": 0.6320754716981132,
+        "percentile_95_ci": [
+          0.026681040745349573,
+          0.11303088869146578
+        ],
+        "point_estimate": 0.0678166421663045,
+        "relative_mae_reduction": 0.21471903054959202,
+        "two_sided_bootstrap_p_value": 0.0006
+      },
+      "primary_support_rule_passed": true,
+      "relative_mae_reduction": 0.21471903054959202,
+      "two_sided_sign_flip_p_value": 0.0012999740005199896
+    },
+    "m1_vs_text": {
+      "absolute_mae_reduction": 0.0004546889478057537,
+      "baseline_metrics": {
+        "mae_log10_usd": 0.2484770387549742,
+        "median_absolute_error_log10_usd": 0.07392848418852727,
+        "r2": 0.7793483968432466,
+        "rmse_log10_usd": 0.5099558881799497
+      },
+      "model_lower_error_product_fraction": 0.41509433962264153,
+      "model_metrics": {
+        "mae_log10_usd": 0.24802234980716847,
+        "median_absolute_error_log10_usd": 0.07592370996927178,
+        "r2": 0.778306632702931,
+        "rmse_log10_usd": 0.5111582999744456
+      },
+      "paired_bootstrap": {
+        "draws": 20000,
+        "model_lower_error_product_fraction": 0.41509433962264153,
+        "percentile_95_ci": [
+          -0.0011135489981201263,
+          0.0020331070674093226
+        ],
+        "point_estimate": 0.0004546889478057537,
+        "relative_mae_reduction": 0.001829903278323142,
+        "two_sided_bootstrap_p_value": 0.5732
+      },
+      "primary_support_rule_passed": false,
+      "relative_mae_reduction": 0.001829903278323142,
+      "two_sided_sign_flip_p_value": 0.5872682546349073
+    },
+    "models_per_ensemble": 100,
+    "price_deciles_total": 10,
+    "price_deciles_where_m1_better": 8,
+    "target_free_prediction_file_sha256": "58cde87912e4a2cd3ff274044700188df4acf8596603526a125968e68da01659",
+    "test_targets_used_for_feature_construction": false,
+    "test_targets_used_for_hyperparameter_selection": false,
+    "training_selected_blend": {
+      "m1_blend_vs_m0": {
+        "absolute_mae_reduction": 0.04703557251357381,
+        "baseline_metrics": {
+          "mae_log10_usd": 0.315838991973473,
+          "median_absolute_error_log10_usd": 0.09853825871671074,
+          "r2": 0.7215608747778899,
+          "rmse_log10_usd": 0.5728543264752679
+        },
+        "model_lower_error_product_fraction": 0.6320754716981132,
+        "model_metrics": {
+          "mae_log10_usd": 0.2688034194598991,
+          "median_absolute_error_log10_usd": 0.09482508701902082,
+          "r2": 0.7705595265034674,
+          "rmse_log10_usd": 0.5200128579624236
+        },
+        "paired_bootstrap": {
+          "draws": 20000,
+          "model_lower_error_product_fraction": 0.6320754716981132,
+          "percentile_95_ci": [
+            0.018922951594769814,
+            0.07717127401868423
+          ],
+          "point_estimate": 0.04703557251357381,
+          "relative_mae_reduction": 0.1489226273794728,
+          "two_sided_bootstrap_p_value": 0.0008
+        },
+        "primary_support_rule_passed": true,
+        "relative_mae_reduction": 0.1489226273794728,
+        "two_sided_sign_flip_p_value": 0.0013199736005279894
+      },
+      "m1_weight": 0.68,
+      "test_targets_used_for_selection": false
+    }
+  },
+  "input_hashes": {
+    "m0_decision_tree.joblib": "4d41facdd57752b909ffaa54e2d9454658bb08e62a84b261d42161c4d33bb1a9",
+    "m0_train_oof_predictions.csv": "06409397016c7d0290fedebdfe3fa71c97028a10eef1a218b52c6531ffb9181f",
+    "telecom_base_term_taxonomy.json": "267cb993e5b94a66283b184692bbedf5d13f214e7b623158423440c54ce4ab71",
+    "telecom_feature_manifest.json": "d5a40c63a197626e99068d59bf72d78af2c60cdafd2195f33f0d837268ba2e53",
+    "telecom_term_state_taxonomy.json": "928fdfa1ebb6e4433fa89796eba5bb418e86d5e8a4818951740d73fac617881a",
+    "telecom_test_frozen_feature_matrix.csv": "5009b7fe1cff66ee0fbbac3501a37d110dd83adc5e5b593a0f4e1ecf2534c5aa",
+    "telecom_train_frozen_feature_matrix.csv": "c87d4a820ea04e1f59bbef27ff6bc4d5c251346c195a4e9e7225c0ed561e57b0",
+    "telecom_train_test_split.csv": "426b14b44012aa0b62fd37327709264d4aa49e9e570787a9fe5c650deebce120",
+    "test_model_inputs.csv": "812e03cfb45c3d8e85b8ea2c955502f1c61be4ff0d7508ba536ab46db625b1ed",
+    "test_outcomes_for_evaluation.csv": "d3cc4978a8a1b499d33a48b90c095700b96689980d173ce6adcb7ffc4643e52d",
+    "train_negotiation_inputs.csv": "296256b211a3399d3536a37ec317713a325583fe073af95d0c3b82002550b9a8"
+  },
+  "m0_tree_hyperparameters": {
+    "ccp_alpha": 0.0,
+    "max_depth": 10,
+    "min_samples_leaf": 10
+  },
+  "primary_metric": "MAE in log10 real monthly transaction price",
+  "rows": {
+    "heldout_test": 106,
+    "training": 420
+  },
+  "same_tree_hyperparameters": true,
+  "status": "telecom_m1_replication_complete",
+  "target": "LogPriceMo (log10 real monthly transaction price in USD)"
+}

@@ -1,0 +1,96 @@
+{
+  "protocol_version": "mechanism-confirmation-v1",
+  "status": "frozen_before_confirmation_plan_and_api_execution",
+  "purpose": "Independently confirm detailed rules for verification-cost, integration-cost, and governance-risk mechanisms.",
+  "sample": {
+    "pairs_per_detail_rule": 39,
+    "detail_rules": 6,
+    "total_pairs": 234,
+    "total_runs": 468,
+    "product_rule_pairs_needed": 234,
+    "minimum_unique_products_per_rule": 39
+  },
+  "sampling_design": {
+    "within_rule_product_reuse": false,
+    "cross_rule_product_reuse": true,
+    "rationale": "The remaining independent financial product pool is smaller than the total preallocated pairs. Each rule retains 39 distinct products and fresh agent sessions; a product may appear in a different prespecified rule, whose paired test is analyzed separately."
+  },
+  "valuation": {
+    "organizational_budget_multiplier": 1.15
+  },
+  "rules": [
+    {
+      "mechanism_id": "verification_cost",
+      "rule_id": "verified_content_specification",
+      "topic": "content specification",
+      "requirement": "The intended task requires field-level content definitions that can be checked before integration.",
+      "treatment_fact": "A field-level content dictionary and representative sample records are available for verification before purchase.",
+      "control_fact": "The supplied evidence does not establish whether a field-level content dictionary or representative sample records are available; this remains unresolved.",
+      "expected_direction": "upward"
+    },
+    {
+      "mechanism_id": "verification_cost",
+      "rule_id": "verified_field_semantics",
+      "topic": "field semantics",
+      "requirement": "The intended task requires documented field meanings and units that can be checked before use.",
+      "treatment_fact": "Field meanings, units, and coding conventions are documented and available for verification before purchase.",
+      "control_fact": "The supplied evidence does not establish whether field meanings, units, and coding conventions are documented; this remains unresolved.",
+      "expected_direction": "upward"
+    },
+    {
+      "mechanism_id": "integration_cost",
+      "rule_id": "stable_machine_readable_schema",
+      "topic": "integration schema",
+      "requirement": "The existing pipeline requires a stable machine-readable schema with version information.",
+      "treatment_fact": "A stable machine-readable schema with version information is included for integration.",
+      "control_fact": "The supplied evidence does not establish whether a stable machine-readable schema with version information is included; this remains unresolved.",
+      "expected_direction": "upward"
+    },
+    {
+      "mechanism_id": "integration_cost",
+      "rule_id": "seller_integration_support",
+      "topic": "integration support",
+      "requirement": "The intended deployment requires seller support for field mapping and initial integration questions.",
+      "treatment_fact": "Seller support for field mapping and initial integration questions is included in the transaction.",
+      "control_fact": "The supplied evidence does not establish whether seller support for field mapping or initial integration questions is included; this remains unresolved.",
+      "expected_direction": "upward"
+    },
+    {
+      "mechanism_id": "governance_risk",
+      "rule_id": "verified_usage_rights",
+      "topic": "usage rights",
+      "requirement": "The intended task requires documented rights that explicitly permit the buyer's stated analytical and internal operational use.",
+      "treatment_fact": "The transaction documentation explicitly permits the buyer's stated analytical and internal operational use.",
+      "control_fact": "The supplied evidence does not establish whether the buyer's stated analytical and internal operational use is permitted; the usage-rights boundary remains unresolved.",
+      "expected_direction": "upward"
+    },
+    {
+      "mechanism_id": "governance_risk",
+      "rule_id": "verified_privacy_compliance",
+      "topic": "privacy compliance",
+      "requirement": "The intended task requires documented lawful sourcing, privacy handling, and responsibility boundaries for the supplied data.",
+      "treatment_fact": "Documented lawful sourcing, privacy handling, and responsibility boundaries are supplied for the transaction.",
+      "control_fact": "The supplied evidence does not establish lawful sourcing, privacy handling, or responsibility boundaries for the transaction; these compliance conditions remain unresolved.",
+      "expected_direction": "upward"
+    }
+  ],
+  "primary_confirmation": {
+    "alpha_per_rule": 0.008333333333333334,
+    "minimum_both_arm_agreements": 16,
+    "require_positive_wtp": true,
+    "require_positive_conditional_negotiated_price": true,
+    "require_control_integrity": 1.0
+  },
+  "mechanism_summary_rules": {
+    "verification_cost": "IF product claims are specific, traceable, and verifiable, THEN buyer verification cost and uncertainty decrease, increasing effective WTP and transaction value.",
+    "integration_cost": "IF delivery format, schema, and service scope reduce buyer integration effort, THEN time to value and effective WTP increase.",
+    "governance_risk": "IF usage rights, privacy compliance, and responsibility boundaries are explicitly bounded, THEN expected loss and the buyer's risk discount decrease; unresolved boundaries reduce transaction value or cause exit."
+  },
+  "causal_scope": "Controlled LLM-agent simulator only",
+  "prohibitions": [
+    "No real transaction price is visible to agents or used as a gate.",
+    "No product is deleted or replaced after outcomes are observed.",
+    "No threshold is changed after confirmation outcomes are observed.",
+    "Conditional negotiated-price effects are reported only among pairs agreeing under both arms."
+  ]
+}

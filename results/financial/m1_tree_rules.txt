@@ -1,0 +1,283 @@
+|--- History <= 9672.50000
+|   |--- S3Bucket <= 0.50000
+|   |   |--- units <= 0.00001
+|   |   |   |--- DelMethod <= 0.50000
+|   |   |   |   |--- implicit_context_term__global_scope_observed <= 0.50000
+|   |   |   |   |   |--- implicit_context_term__information_score <= 0.50000
+|   |   |   |   |   |   |--- value: [3.50320]
+|   |   |   |   |   |--- implicit_context_term__information_score >  0.50000
+|   |   |   |   |   |   |--- value: [3.35356]
+|   |   |   |   |--- implicit_context_term__global_scope_observed >  0.50000
+|   |   |   |   |   |--- value: [3.23741]
+|   |   |   |--- DelMethod >  0.50000
+|   |   |   |   |--- implicit_score__term_state__scale_wording_unresolved_listing_claim_observed <= 0.50000
+|   |   |   |   |   |--- csv <= 0.50000
+|   |   |   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |   |   |--- History <= 90.00000
+|   |   |   |   |   |   |   |   |--- PercGDP <= 0.76752
+|   |   |   |   |   |   |   |   |   |--- value: [2.05542]
+|   |   |   |   |   |   |   |   |--- PercGDP >  0.76752
+|   |   |   |   |   |   |   |   |   |--- value: [2.33201]
+|   |   |   |   |   |   |   |--- History >  90.00000
+|   |   |   |   |   |   |   |   |--- value: [2.83424]
+|   |   |   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |   |   |--- implicit_context_term__service_score <= 0.50000
+|   |   |   |   |   |   |   |   |--- value: [2.80654]
+|   |   |   |   |   |   |   |--- implicit_context_term__service_score >  0.50000
+|   |   |   |   |   |   |   |   |--- value: [3.74587]
+|   |   |   |   |   |--- csv >  0.50000
+|   |   |   |   |   |   |--- History <= 2372.50000
+|   |   |   |   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |   |   |   |--- IdIndividuals <= 0.50000
+|   |   |   |   |   |   |   |   |   |--- ondemand <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.03001
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [1.87925]
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP >  0.03001
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.28481]
+|   |   |   |   |   |   |   |   |   |--- ondemand >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- implicit_context_term__attributes_score <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [1.62839]
+|   |   |   |   |   |   |   |   |   |   |--- implicit_context_term__attributes_score >  0.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [1.20251]
+|   |   |   |   |   |   |   |   |--- IdIndividuals >  0.50000
+|   |   |   |   |   |   |   |   |   |--- Email <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- people <= 0.00000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [1.20748]
+|   |   |   |   |   |   |   |   |   |   |--- people >  0.00000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [1.28353]
+|   |   |   |   |   |   |   |   |   |--- Email >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [0.50547]
+|   |   |   |   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |   |   |   |--- units <= 0.00001
+|   |   |   |   |   |   |   |   |   |--- Download <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [2.41745]
+|   |   |   |   |   |   |   |   |   |--- Download >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- History <= 3.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- History >  3.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- units >  0.00001
+|   |   |   |   |   |   |   |   |   |--- Email <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- people <= 0.00001
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- people >  0.00001
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Email >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.06005
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.28846]
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP >  0.06005
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.42587]
+|   |   |   |   |   |   |--- History >  2372.50000
+|   |   |   |   |   |   |   |--- History <= 6022.50000
+|   |   |   |   |   |   |   |   |--- value: [2.61097]
+|   |   |   |   |   |   |   |--- History >  6022.50000
+|   |   |   |   |   |   |   |   |--- value: [3.08409]
+|   |   |   |   |--- implicit_score__term_state__scale_wording_unresolved_listing_claim_observed >  0.50000
+|   |   |   |   |   |--- entities <= 0.00000
+|   |   |   |   |   |   |--- implicit_score__term_state__insights_bounded_limitation_observed <= 0.50000
+|   |   |   |   |   |   |   |--- value: [0.56113]
+|   |   |   |   |   |   |--- implicit_score__term_state__insights_bounded_limitation_observed >  0.50000
+|   |   |   |   |   |   |   |--- value: [-0.08205]
+|   |   |   |   |   |--- entities >  0.00000
+|   |   |   |   |   |   |--- value: [1.96528]
+|   |   |--- units >  0.00001
+|   |   |   |--- records <= 0.00150
+|   |   |   |   |--- people <= 0.00009
+|   |   |   |   |   |--- ondemand <= 0.50000
+|   |   |   |   |   |   |--- entities <= 0.00008
+|   |   |   |   |   |   |   |--- entities <= 0.00004
+|   |   |   |   |   |   |   |   |--- people <= 0.00002
+|   |   |   |   |   |   |   |   |   |--- products <= 0.00462
+|   |   |   |   |   |   |   |   |   |   |--- units <= 0.00013
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- units >  0.00013
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- products >  0.00462
+|   |   |   |   |   |   |   |   |   |   |--- value: [1.78448]
+|   |   |   |   |   |   |   |   |--- people >  0.00002
+|   |   |   |   |   |   |   |   |   |--- units <= 0.00004
+|   |   |   |   |   |   |   |   |   |   |--- units <= 0.00003
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- units >  0.00003
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- units >  0.00004
+|   |   |   |   |   |   |   |   |   |   |--- units <= 0.00006
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- units >  0.00006
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.73058]
+|   |   |   |   |   |   |   |--- entities >  0.00004
+|   |   |   |   |   |   |   |   |--- value: [1.19912]
+|   |   |   |   |   |   |--- entities >  0.00008
+|   |   |   |   |   |   |   |--- value: [3.11175]
+|   |   |   |   |   |--- ondemand >  0.50000
+|   |   |   |   |   |   |--- csv <= 0.50000
+|   |   |   |   |   |   |   |--- value: [3.28747]
+|   |   |   |   |   |   |--- csv >  0.50000
+|   |   |   |   |   |   |   |--- entities <= 0.00001
+|   |   |   |   |   |   |   |   |--- IdCompanies <= 0.50000
+|   |   |   |   |   |   |   |   |   |--- value: [2.20269]
+|   |   |   |   |   |   |   |   |--- IdCompanies >  0.50000
+|   |   |   |   |   |   |   |   |   |--- value: [2.69841]
+|   |   |   |   |   |   |   |--- entities >  0.00001
+|   |   |   |   |   |   |   |   |--- units <= 0.00003
+|   |   |   |   |   |   |   |   |   |--- units <= 0.00002
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.00743
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.87506]
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP >  0.00743
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.87506]
+|   |   |   |   |   |   |   |   |   |--- units >  0.00002
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.02475
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.71391]
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP >  0.02475
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.67447]
+|   |   |   |   |   |   |   |   |--- units >  0.00003
+|   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.02224
+|   |   |   |   |   |   |   |   |   |   |--- value: [2.85846]
+|   |   |   |   |   |   |   |   |   |--- PercGDP >  0.02224
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.02728]
+|   |   |   |   |--- people >  0.00009
+|   |   |   |   |   |--- NCountries <= 220.00000
+|   |   |   |   |   |   |--- implicit_score__term_state__market_confirmed_property_score <= 0.50000
+|   |   |   |   |   |   |   |--- people <= 0.00018
+|   |   |   |   |   |   |   |   |--- people <= 0.00012
+|   |   |   |   |   |   |   |   |   |--- value: [2.84879]
+|   |   |   |   |   |   |   |   |--- people >  0.00012
+|   |   |   |   |   |   |   |   |   |--- units <= 0.00013
+|   |   |   |   |   |   |   |   |   |   |--- value: [2.91137]
+|   |   |   |   |   |   |   |   |   |--- units >  0.00013
+|   |   |   |   |   |   |   |   |   |   |--- value: [2.92622]
+|   |   |   |   |   |   |   |--- people >  0.00018
+|   |   |   |   |   |   |   |   |--- people <= 0.00027
+|   |   |   |   |   |   |   |   |   |--- people <= 0.00021
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.06149]
+|   |   |   |   |   |   |   |   |   |--- people >  0.00021
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.12060]
+|   |   |   |   |   |   |   |   |--- people >  0.00027
+|   |   |   |   |   |   |   |   |   |--- units <= 0.00040
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.20866]
+|   |   |   |   |   |   |   |   |   |--- units >  0.00040
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.16976]
+|   |   |   |   |   |   |--- implicit_score__term_state__market_confirmed_property_score >  0.50000
+|   |   |   |   |   |   |   |--- value: [2.70426]
+|   |   |   |   |   |--- NCountries >  220.00000
+|   |   |   |   |   |   |--- value: [3.36069]
+|   |   |   |--- records >  0.00150
+|   |   |   |   |--- value: [0.99421]
+|   |--- S3Bucket >  0.50000
+|   |   |--- Email <= 0.50000
+|   |   |   |--- ProfServices <= 0.50000
+|   |   |   |   |--- PercGDP <= 0.02434
+|   |   |   |   |   |--- csv <= 0.50000
+|   |   |   |   |   |   |--- DelMethod <= 3.50000
+|   |   |   |   |   |   |   |--- implicit_context_term__report_score <= 0.50000
+|   |   |   |   |   |   |   |   |--- IdCompanies <= 0.50000
+|   |   |   |   |   |   |   |   |   |--- value: [2.34825]
+|   |   |   |   |   |   |   |   |--- IdCompanies >  0.50000
+|   |   |   |   |   |   |   |   |   |--- value: [1.89384]
+|   |   |   |   |   |   |   |--- implicit_context_term__report_score >  0.50000
+|   |   |   |   |   |   |   |   |--- value: [2.34830]
+|   |   |   |   |   |   |--- DelMethod >  3.50000
+|   |   |   |   |   |   |   |--- value: [2.38649]
+|   |   |   |   |   |--- csv >  0.50000
+|   |   |   |   |   |   |--- value: [2.71034]
+|   |   |   |   |--- PercGDP >  0.02434
+|   |   |   |   |   |--- units <= 0.00514
+|   |   |   |   |   |   |--- History <= 912.50000
+|   |   |   |   |   |   |   |--- implicit_context_term__sources_score <= 0.50000
+|   |   |   |   |   |   |   |   |--- Limitations <= 0.50000
+|   |   |   |   |   |   |   |   |   |--- csv <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- implicit_context_term__websites_observed <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- implicit_context_term__websites_observed >  0.50000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [2.73365]
+|   |   |   |   |   |   |   |   |   |--- csv >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP <= 0.16819
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PercGDP >  0.16819
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Limitations >  0.50000
+|   |   |   |   |   |   |   |   |   |--- value: [2.36437]
+|   |   |   |   |   |   |   |--- implicit_context_term__sources_score >  0.50000
+|   |   |   |   |   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |   |   |   |   |--- value: [3.32187]
+|   |   |   |   |   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |   |   |   |   |--- value: [3.77566]
+|   |   |   |   |   |   |--- History >  912.50000
+|   |   |   |   |   |   |   |--- DelMethod <= 3.50000
+|   |   |   |   |   |   |   |   |--- NCountries <= 2.50000
+|   |   |   |   |   |   |   |   |   |--- DelMethod <= 2.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.30234]
+|   |   |   |   |   |   |   |   |   |--- DelMethod >  2.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [2.87228]
+|   |   |   |   |   |   |   |   |--- NCountries >  2.50000
+|   |   |   |   |   |   |   |   |   |--- value: [3.38990]
+|   |   |   |   |   |   |   |--- DelMethod >  3.50000
+|   |   |   |   |   |   |   |   |--- History <= 3832.50000
+|   |   |   |   |   |   |   |   |   |--- DelMethod <= 4.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.54704]
+|   |   |   |   |   |   |   |   |   |--- DelMethod >  4.50000
+|   |   |   |   |   |   |   |   |   |   |--- entities <= 0.00000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [3.66587]
+|   |   |   |   |   |   |   |   |   |   |--- entities >  0.00000
+|   |   |   |   |   |   |   |   |   |   |   |--- value: [4.15638]
+|   |   |   |   |   |   |   |   |--- History >  3832.50000
+|   |   |   |   |   |   |   |   |   |--- implicit_context_term__included_content_observed <= 0.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.41462]
+|   |   |   |   |   |   |   |   |   |--- implicit_context_term__included_content_observed >  0.50000
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.00595]
+|   |   |   |   |   |--- units >  0.00514
+|   |   |   |   |   |   |--- symbols <= 0.01475
+|   |   |   |   |   |   |   |--- locations <= 0.00542
+|   |   |   |   |   |   |   |   |--- History <= 547.50000
+|   |   |   |   |   |   |   |   |   |--- units <= 0.06225
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.74038]
+|   |   |   |   |   |   |   |   |   |--- units >  0.06225
+|   |   |   |   |   |   |   |   |   |   |--- value: [3.41659]
+|   |   |   |   |   |   |   |   |--- History >  547.50000
+|   |   |   |   |   |   |   |   |   |--- value: [4.01243]
+|   |   |   |   |   |   |   |--- locations >  0.00542
+|   |   |   |   |   |   |   |   |--- value: [4.25882]
+|   |   |   |   |   |   |--- symbols >  0.01475
+|   |   |   |   |   |   |   |--- value: [2.84862]
+|   |   |   |--- ProfServices >  0.50000
+|   |   |   |   |--- implicit_score__term_state__provided_content_mixed_evidence_score <= 0.50000
+|   |   |   |   |   |--- PercGDP <= 0.01823
+|   |   |   |   |   |   |--- implicit_score__term_state__service_unresolved_listing_claim_score <= 0.50000
+|   |   |   |   |   |   |   |--- value: [3.77391]
+|   |   |   |   |   |   |--- implicit_score__term_state__service_unresolved_listing_claim_score >  0.50000
+|   |   |   |   |   |   |   |--- value: [4.05120]
+|   |   |   |   |   |--- PercGDP >  0.01823
+|   |   |   |   |   |   |--- History <= 90.00000
+|   |   |   |   |   |   |   |--- value: [3.31075]
+|   |   |   |   |   |   |--- History >  90.00000
+|   |   |   |   |   |   |   |--- value: [3.63580]
+|   |   |   |   |--- implicit_score__term_state__provided_content_mixed_evidence_score >  0.50000
+|   |   |   |   |   |--- value: [4.20313]
+|   |   |--- Email >  0.50000
+|   |   |   |--- History <= 212.50000
+|   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |--- value: [-0.01339]
+|   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |--- implicit_context_term__sources_score <= 0.50000
+|   |   |   |   |   |   |--- value: [2.20649]
+|   |   |   |   |   |--- implicit_context_term__sources_score >  0.50000
+|   |   |   |   |   |   |--- value: [1.75999]
+|   |   |   |--- History >  212.50000
+|   |   |   |   |--- units <= 0.00000
+|   |   |   |   |   |--- value: [1.92176]
+|   |   |   |   |--- units >  0.00000
+|   |   |   |   |   |--- implicit_context_term__type_observed <= 0.50000
+|   |   |   |   |   |   |--- entities <= 0.00000
+|   |   |   |   |   |   |   |--- value: [2.97315]
+|   |   |   |   |   |   |--- entities >  0.00000
+|   |   |   |   |   |   |   |--- value: [3.42388]
+|   |   |   |   |   |--- implicit_context_term__type_observed >  0.50000
+|   |   |   |   |   |   |--- value: [2.47064]
+|--- History >  9672.50000
+|   |--- implicit_context_term__sources_score <= 0.50000
+|   |   |--- units <= 0.00000
+|   |   |   |--- value: [2.83645]
+|   |   |--- units >  0.00000
+|   |   |   |--- value: [2.51392]
+|   |--- implicit_context_term__sources_score >  0.50000
+|   |   |--- value: [1.00356]

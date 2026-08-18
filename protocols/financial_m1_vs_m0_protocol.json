@@ -1,0 +1,35 @@
+{
+  "status": "frozen_before_new_proof_calculations",
+  "protocol_version": "financial-m1-vs-m0-proof-v1",
+  "date": "2026-08-17",
+  "scope": "Consolidated financial-domain evidence using already frozen target-free predictions",
+  "heldout_limitation": "The 478-product legacy test outcomes were opened by historical workflows; this is not pristine confirmation.",
+  "primary_comparison": {
+    "model": "frozen 100-tree repeated-fold ensemble",
+    "m0": "35 explicit platform fields",
+    "m1": "M0 plus 12 source terms and 24 evidence-state mechanisms",
+    "same_tree_hyperparameters": true,
+    "same_number_of_component_models": true,
+    "metric": "MAE of log10 real monthly transaction price",
+    "paired_bootstrap_draws": 20000,
+    "paired_sign_flip_draws": 50000,
+    "support_rule": "positive M0-minus-M1 MAE reduction, bootstrap 95% CI above zero, and two-sided p below 0.05"
+  },
+  "secondary_stabilized_predictor": {
+    "formula": "(1-w)*M0 + w*M1",
+    "weight_selection": "Choose w from 0.00 to 1.00 in 0.01 steps by minimum MAE on repeated OOF development predictions only",
+    "test_targets_used_for_weight_selection": false,
+    "role": "secondary robustness analysis only; it cannot replace the frozen primary M1"
+  },
+  "mechanism_checks": [
+    "M1 versus text-only baseline in nested development evaluation",
+    "M1 versus row-permuted mechanism block in nested development evaluation",
+    "M1 versus text-only baseline on the fixed external replication"
+  ],
+  "forbidden": {
+    "test_target_weight_tuning": true,
+    "changing_m0_and_m1_capacity_asymmetrically": true,
+    "hiding_secondary_metrics": true,
+    "describing_simulator rules as real-market causal evidence": true
+  }
+}

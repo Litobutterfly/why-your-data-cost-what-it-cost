@@ -1,0 +1,180 @@
+{
+  "causal_scope": "Supplementary_confirmation evidence in the controlled LLM-agent simulator only; it is not direct real-market causal evidence.",
+  "complete_pairs": 120,
+  "control_unresolved_disclosure_rate": 1.0,
+  "development_gate": {
+    "all_field_strata_directional": true,
+    "complete": true,
+    "control_integrity": true,
+    "field_strata_directional_after_bh": 3,
+    "match_direction": true,
+    "mismatch_direction": true,
+    "price_responsiveness_improved": true
+  },
+  "incomplete_pairs_excluded": 0,
+  "input_sha256": "5c8e67b76601063cd7a12f552e876dc2cde4b6963d2ad624ff5e66e7498c69ff",
+  "phase": "supplementary_confirmation",
+  "price_responsiveness": {
+    "both_arm_agreement_pairs": 57,
+    "improved_over_v2": true,
+    "same_price_pairs": 19,
+    "same_price_rate": 0.3333333333333333,
+    "v2_same_price_rate_reference": 0.4861111111111111
+  },
+  "results": [
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 1,
+        "discordant_pairs": 12,
+        "treatment_only_agreements": 11,
+        "two_sided_exact_p_value": 0.00634765625
+      },
+      "agreement_rate_difference": 0.25,
+      "both_arm_agreement_pairs": 18,
+      "complete_pairs": 40,
+      "control_agreement_rate": 0.475,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "coverage",
+      "mean_control_value_update": -0.13,
+      "mean_relative_price_effect": 0.016969800491313025,
+      "mean_relative_wtp_effect": 0.03302836808257159,
+      "mean_treatment_minus_control_value_update": 0.2325,
+      "mean_treatment_value_update": 0.1025,
+      "same_price_pairs": 8,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.725,
+      "value_update_95_ci": [
+        0.1875,
+        0.2775
+      ],
+      "value_update_bh_q_value": 1.999960000799984e-05,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 1.999960000799984e-05,
+      "within_one_percent_price_pairs": 11
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 7,
+        "discordant_pairs": 9,
+        "treatment_only_agreements": 2,
+        "two_sided_exact_p_value": 0.1796875
+      },
+      "agreement_rate_difference": -0.125,
+      "both_arm_agreement_pairs": 22,
+      "complete_pairs": 40,
+      "control_agreement_rate": 0.725,
+      "directional_after_bh": true,
+      "expected_direction": "downward",
+      "field_group": "customization",
+      "mean_control_value_update": -0.275,
+      "mean_relative_price_effect": -0.007505470905537215,
+      "mean_relative_wtp_effect": -0.0193764870555746,
+      "mean_treatment_minus_control_value_update": -0.13999999999999999,
+      "mean_treatment_value_update": -0.41500000000000004,
+      "same_price_pairs": 5,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.6,
+      "value_update_95_ci": [
+        -0.185,
+        -0.0875
+      ],
+      "value_update_bh_q_value": 1.999960000799984e-05,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 1.999960000799984e-05,
+      "within_one_percent_price_pairs": 8
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 2,
+        "discordant_pairs": 10,
+        "treatment_only_agreements": 8,
+        "two_sided_exact_p_value": 0.109375
+      },
+      "agreement_rate_difference": 0.15000000000000002,
+      "both_arm_agreement_pairs": 17,
+      "complete_pairs": 40,
+      "control_agreement_rate": 0.475,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "identifier",
+      "mean_control_value_update": -0.22999999999999998,
+      "mean_relative_price_effect": 0.006753899580619338,
+      "mean_relative_wtp_effect": 0.05971627381815092,
+      "mean_treatment_minus_control_value_update": 0.41500000000000004,
+      "mean_treatment_value_update": 0.185,
+      "same_price_pairs": 6,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.625,
+      "value_update_95_ci": [
+        0.3725,
+        0.4525
+      ],
+      "value_update_bh_q_value": 1.999960000799984e-05,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 1.999960000799984e-05,
+      "within_one_percent_price_pairs": 9
+    }
+  ],
+  "status": "task_fit_supplementary_confirmation_analysis_complete",
+  "strata_summary": [
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 3,
+        "discordant_pairs": 22,
+        "treatment_only_agreements": 19,
+        "two_sided_exact_p_value": 0.0008554458618164062
+      },
+      "agreement_rate_difference": 0.20000000000000007,
+      "both_arm_agreement_pairs": 35,
+      "control_agreement_rate": 0.475,
+      "direction_matches": true,
+      "field_groups_with_expected_direction": 2,
+      "mean_relative_price_effect": 0.011994908652458447,
+      "mean_relative_wtp_effect": 0.04628723253842115,
+      "mean_treatment_minus_control_value_update": 0.32375,
+      "pairs": 80,
+      "price_effect_95_ci": [
+        -0.00108819278406373,
+        0.01143538533836501
+      ],
+      "price_sign_flip_p_value": 0.12209755804883902,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.675,
+      "value_update_95_ci": [
+        0.2875,
+        0.36
+      ],
+      "value_update_sign_flip_p_value": 1.999960000799984e-05
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 7,
+        "discordant_pairs": 9,
+        "treatment_only_agreements": 2,
+        "two_sided_exact_p_value": 0.1796875
+      },
+      "agreement_rate_difference": -0.125,
+      "both_arm_agreement_pairs": 22,
+      "control_agreement_rate": 0.725,
+      "direction_matches": true,
+      "field_groups_with_expected_direction": 1,
+      "mean_relative_price_effect": -0.007505470905537215,
+      "mean_relative_wtp_effect": -0.0193764870555746,
+      "mean_treatment_minus_control_value_update": -0.14,
+      "pairs": 40,
+      "price_effect_95_ci": [
+        -0.010998634243088494,
+        0.0038891945095598053
+      ],
+      "price_sign_flip_p_value": 0.4280114397712046,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.6,
+      "value_update_95_ci": [
+        -0.185,
+        -0.0875
+      ],
+      "value_update_sign_flip_p_value": 1.999960000799984e-05
+    }
+  ]
+}

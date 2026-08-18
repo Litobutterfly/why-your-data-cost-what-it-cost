@@ -1,0 +1,42 @@
+{
+  "protocol_version": "independent-task-fit-confirmation-v3",
+  "frozen_before_api_execution": true,
+  "source_pairs_per_field": 24,
+  "pairs_per_task_fit_stratum": 12,
+  "total_pairs": 120,
+  "primary_rules": [
+    {
+      "rule_id": "confirmed_task_match_increases_value",
+      "estimand": "Mean paired treatment-minus-control value_update across all task-match pairs.",
+      "expected_direction": "positive"
+    },
+    {
+      "rule_id": "confirmed_task_mismatch_decreases_value",
+      "estimand": "Mean paired treatment-minus-control value_update across all task-mismatch pairs.",
+      "expected_direction": "negative"
+    }
+  ],
+  "primary_multiplicity": "Bonferroni correction for two primary rules; each two-sided sign-flip p-value must be <= 0.025 and its 95% paired bootstrap interval must exclude zero in the expected direction.",
+  "cross_field_requirement": "Each primary rule must have the expected mean direction in at least four of five field groups.",
+  "execution_requirement": "All planned pairs complete and every control seller disclosure preserves the target property as unresolved.",
+  "secondary_outcomes": [
+    "effective willingness-to-pay effect",
+    "paired agreement-probability effect",
+    "paired agreed-price effect among pairs agreeing in both arms"
+  ],
+  "price_propagation_criterion": "At least 20 both-arm agreements, positive match-stratum price effect, and two-sided sign-flip p <= 0.05.",
+  "sample_size_rationale": {
+    "development_match_standardized_value_update_effect": 2.761,
+    "development_mismatch_absolute_standardized_value_update_effect": 1.032,
+    "confirmation_pairs_per_primary_rule": 60,
+    "note": "The independent sample matches the development sample size and substantially exceeds the size needed for the observed value-update effects while retaining five-field coverage."
+  },
+  "frozen_valuation": {
+    "organizational_budget_multiplier": 1.15,
+    "maximum_relative_wtp_update": 0.15,
+    "formula": "effective_wtp = min(budget_cap, pre_evidence_wtp * exp(log(1.15) * value_update))"
+  },
+  "real_transaction_price_visible": false,
+  "real_price_gate_used": false,
+  "causal_scope": "Controlled LLM-agent simulator only"
+}

@@ -1,0 +1,14 @@
+{
+  "active_rules": 6,
+  "causal_scope": "Controlled LLM-agent simulator only",
+  "conditional_price_effect_note": "Negotiated-price effects are estimated only among product-persona pairs that agree under both treatment and control.",
+  "historical_records": 7,
+  "input_hashes": {
+    "36_causal_pricing_rule_mining\\outputs\\causal_pricing_rule_catalog.json": "707960cca92395492df2e12688bbddddf5a5d74b6a2ce7c1f12c100905d43154",
+    "37_causal_price_rule_extension\\outputs\\extension_confirmation_decisions.json": "270c23c0b6b37c22530d6d3407c5df4da50b3fec51a6525afa8df36cbe1b06fb",
+    "37_causal_price_rule_extension\\outputs\\extension_rule_results.csv": "87102e9637f75df689d7b3c264c546313aed06da3c8dda98d2bfe3e742212fa9"
+  },
+  "status": "combined_causal_rule_catalog_complete",
+  "strict_causal_negotiated_price_rule_records": 3,
+  "strict_rule_mechanism_families": 1
+}

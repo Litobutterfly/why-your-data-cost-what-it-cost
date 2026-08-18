@@ -1,0 +1,74 @@
+{
+  "heldout_status": "Legacy held-out financial test split; predictions in the hashed input file were constructed without loading test targets, but historical workflows had previously opened these outcomes.",
+  "input_hashes": {
+    "external_ensemble_prediction_manifest.json": "2f3ca667510f7c7007243601e609dddb5b40d5adec26d9964525188d12892612",
+    "external_ensemble_predictions_without_targets.csv": "906e4d9354ec8bea743f9a9384a9517e5ecf8116fe43563e074afbb73a892c51",
+    "financial.csv": "1b012c02155ac355620d5fdb092bfb94392af2bf5045f14704406560efc00d26",
+    "financial_train_test_split.csv": "98150e610ddbd52d448f7e757421ae039d4a850a53130d40462ecf1531f64ec2"
+  },
+  "model_metrics": {
+    "m0_explicit": {
+      "mae_log10_usd": 0.2728306581836687,
+      "median_absolute_error_log10_usd": 0.08507933183542526,
+      "r2": 0.7540499965635076,
+      "rmse_log10_usd": 0.49392943933135297
+    },
+    "m1_frozen_k24": {
+      "mae_log10_usd": 0.2603293861822304,
+      "median_absolute_error_log10_usd": 0.055571347307844854,
+      "r2": 0.7498254943313712,
+      "rmse_log10_usd": 0.4981533102390531
+    },
+    "text_baseline": {
+      "mae_log10_usd": 0.2607327259734021,
+      "median_absolute_error_log10_usd": 0.06350288780602897,
+      "r2": 0.7582513339179944,
+      "rmse_log10_usd": 0.4896925970599542
+    }
+  },
+  "models_per_ensemble": 100,
+  "paired_comparisons": {
+    "m1_vs_m0": {
+      "draws": 20000,
+      "model_lower_error_product_fraction": 0.5857740585774058,
+      "percentile_95_ci": [
+        0.0033785530833571734,
+        0.021232600521698605
+      ],
+      "point_estimate_mae_reduction": 0.0125012720014383,
+      "relative_mae_reduction": 0.04582062765476483,
+      "two_sided_bootstrap_p_value": 0.0089
+    },
+    "m1_vs_text": {
+      "draws": 20000,
+      "model_lower_error_product_fraction": 0.5334728033472803,
+      "percentile_95_ci": [
+        -0.005807193966182944,
+        0.005580277032130508
+      ],
+      "point_estimate_mae_reduction": 0.0004033397911716751,
+      "relative_mae_reduction": 0.0015469473180471434,
+      "two_sided_bootstrap_p_value": 0.8418
+    },
+    "text_vs_m0": {
+      "draws": 20000,
+      "model_lower_error_product_fraction": 0.602510460251046,
+      "percentile_95_ci": [
+        0.006124651074901772,
+        0.018048156110986226
+      ],
+      "point_estimate_mae_reduction": 0.012097932210266628,
+      "relative_mae_reduction": 0.04434227550087989,
+      "two_sided_bootstrap_p_value": 0.0001
+    }
+  },
+  "prediction_file_created_without_test_targets": true,
+  "same_tree_hyperparameters": true,
+  "status": "external_ensemble_evaluation_complete",
+  "test_rows": 478,
+  "tree_hyperparameters": {
+    "ccp_alpha": 0.0,
+    "max_depth": null,
+    "min_samples_leaf": 10
+  }
+}

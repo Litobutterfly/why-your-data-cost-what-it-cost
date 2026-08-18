@@ -1,0 +1,397 @@
+{
+  "causal_scope": "Confirmation evidence in the controlled LLM-agent simulator only; it is not direct real-market causal evidence.",
+  "complete_pairs": 120,
+  "control_unresolved_disclosure_rate": 1.0,
+  "development_gate": {
+    "all_field_strata_directional": true,
+    "complete": true,
+    "control_integrity": true,
+    "field_strata_directional_after_bh": 8,
+    "match_direction": true,
+    "mismatch_direction": true,
+    "price_responsiveness_improved": true
+  },
+  "incomplete_pairs_excluded": 0,
+  "input_sha256": "39221752c8ef4341237e807beb5183462f83413e841264868c749b53b9820e37",
+  "phase": "confirmation",
+  "price_responsiveness": {
+    "both_arm_agreement_pairs": 41,
+    "improved_over_v2": true,
+    "same_price_pairs": 16,
+    "same_price_rate": 0.3902439024390244,
+    "v2_same_price_rate_reference": 0.4861111111111111
+  },
+  "results": [
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 0,
+        "discordant_pairs": 3,
+        "treatment_only_agreements": 3,
+        "two_sided_exact_p_value": 0.25
+      },
+      "agreement_rate_difference": 0.25,
+      "both_arm_agreement_pairs": 6,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.5,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "coverage",
+      "mean_control_value_update": -0.25000000000000006,
+      "mean_relative_price_effect": 0.01731648434762656,
+      "mean_relative_wtp_effect": 0.044035262849374535,
+      "mean_treatment_minus_control_value_update": 0.3083333333333334,
+      "mean_treatment_value_update": 0.05833333333333333,
+      "same_price_pairs": 2,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.75,
+      "value_update_95_ci": [
+        0.2166666666666667,
+        0.425
+      ],
+      "value_update_bh_q_value": 0.002119957600847983,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.0010599788004239915,
+      "within_one_percent_price_pairs": 2
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 2,
+        "discordant_pairs": 4,
+        "treatment_only_agreements": 2,
+        "two_sided_exact_p_value": 1.0
+      },
+      "agreement_rate_difference": 0.0,
+      "both_arm_agreement_pairs": 1,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.25,
+      "directional_after_bh": true,
+      "expected_direction": "downward",
+      "field_group": "coverage",
+      "mean_control_value_update": -0.325,
+      "mean_relative_price_effect": 0.0,
+      "mean_relative_wtp_effect": -0.023024454124293103,
+      "mean_treatment_minus_control_value_update": -0.16666666666666666,
+      "mean_treatment_value_update": -0.49166666666666664,
+      "same_price_pairs": 1,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.25,
+      "value_update_95_ci": [
+        -0.26666666666666666,
+        -0.05833333333333331
+      ],
+      "value_update_bh_q_value": 0.0377242455150897,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.026619467610647787,
+      "within_one_percent_price_pairs": 1
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 1,
+        "discordant_pairs": 5,
+        "treatment_only_agreements": 4,
+        "two_sided_exact_p_value": 0.375
+      },
+      "agreement_rate_difference": 0.25000000000000006,
+      "both_arm_agreement_pairs": 3,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.3333333333333333,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "delivery",
+      "mean_control_value_update": -0.2833333333333334,
+      "mean_relative_price_effect": 0.0009347047770378314,
+      "mean_relative_wtp_effect": 0.0611983893415704,
+      "mean_treatment_minus_control_value_update": 0.42500000000000004,
+      "mean_treatment_value_update": 0.1416666666666667,
+      "same_price_pairs": 1,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.5833333333333334,
+      "value_update_95_ci": [
+        0.3416666666666666,
+        0.5166666666666667
+      ],
+      "value_update_bh_q_value": 0.0015999680006399872,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.00037999240015199694,
+      "within_one_percent_price_pairs": 1
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 1,
+        "discordant_pairs": 3,
+        "treatment_only_agreements": 2,
+        "two_sided_exact_p_value": 1.0
+      },
+      "agreement_rate_difference": 0.08333333333333326,
+      "both_arm_agreement_pairs": 6,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.5833333333333334,
+      "directional_after_bh": false,
+      "expected_direction": "downward",
+      "field_group": "delivery",
+      "mean_control_value_update": -0.3,
+      "mean_relative_price_effect": -0.01877189121038969,
+      "mean_relative_wtp_effect": -0.012729793321967664,
+      "mean_treatment_minus_control_value_update": -0.09166666666666666,
+      "mean_treatment_value_update": -0.39166666666666666,
+      "same_price_pairs": 3,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.6666666666666666,
+      "value_update_95_ci": [
+        -0.16666666666666666,
+        -0.016666666666666666
+      ],
+      "value_update_bh_q_value": 0.06855418447186612,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.061698766024679504,
+      "within_one_percent_price_pairs": 4
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 0,
+        "discordant_pairs": 6,
+        "treatment_only_agreements": 6,
+        "two_sided_exact_p_value": 0.03125
+      },
+      "agreement_rate_difference": 0.49999999999999994,
+      "both_arm_agreement_pairs": 5,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.4166666666666667,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "format",
+      "mean_control_value_update": -0.2666666666666667,
+      "mean_relative_price_effect": 0.0002570638843060191,
+      "mean_relative_wtp_effect": 0.05503655038627686,
+      "mean_treatment_minus_control_value_update": 0.3833333333333333,
+      "mean_treatment_value_update": 0.11666666666666665,
+      "same_price_pairs": 2,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.9166666666666666,
+      "value_update_95_ci": [
+        0.2916666666666667,
+        0.47500000000000003
+      ],
+      "value_update_bh_q_value": 0.0015999680006399872,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.0006399872002559949,
+      "within_one_percent_price_pairs": 2
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 2,
+        "discordant_pairs": 3,
+        "treatment_only_agreements": 1,
+        "two_sided_exact_p_value": 1.0
+      },
+      "agreement_rate_difference": -0.08333333333333337,
+      "both_arm_agreement_pairs": 3,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.4166666666666667,
+      "directional_after_bh": true,
+      "expected_direction": "downward",
+      "field_group": "format",
+      "mean_control_value_update": -0.23333333333333336,
+      "mean_relative_price_effect": -0.013700356085891596,
+      "mean_relative_wtp_effect": -0.0298278550222828,
+      "mean_treatment_minus_control_value_update": -0.21666666666666667,
+      "mean_treatment_value_update": -0.45,
+      "same_price_pairs": 2,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.3333333333333333,
+      "value_update_95_ci": [
+        -0.2833333333333334,
+        -0.14166666666666666
+      ],
+      "value_update_bh_q_value": 0.0034665973347199723,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.0020799584008319833,
+      "within_one_percent_price_pairs": 2
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 1,
+        "discordant_pairs": 2,
+        "treatment_only_agreements": 1,
+        "two_sided_exact_p_value": 1.0
+      },
+      "agreement_rate_difference": 0.0,
+      "both_arm_agreement_pairs": 6,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.5833333333333334,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "identifier",
+      "mean_control_value_update": -0.2833333333333334,
+      "mean_relative_price_effect": 0.010370388702866773,
+      "mean_relative_wtp_effect": 0.06739621592146072,
+      "mean_treatment_minus_control_value_update": 0.46666666666666673,
+      "mean_treatment_value_update": 0.18333333333333335,
+      "same_price_pairs": 1,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.5833333333333334,
+      "value_update_95_ci": [
+        0.3916666666666668,
+        0.55
+      ],
+      "value_update_bh_q_value": 0.0015999680006399872,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.0005399892002159956,
+      "within_one_percent_price_pairs": 1
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 1,
+        "discordant_pairs": 2,
+        "treatment_only_agreements": 1,
+        "two_sided_exact_p_value": 1.0
+      },
+      "agreement_rate_difference": 0.0,
+      "both_arm_agreement_pairs": 3,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.3333333333333333,
+      "directional_after_bh": true,
+      "expected_direction": "downward",
+      "field_group": "identifier",
+      "mean_control_value_update": -0.45,
+      "mean_relative_price_effect": 0.0017064879517836307,
+      "mean_relative_wtp_effect": -0.020746068225092618,
+      "mean_treatment_minus_control_value_update": -0.15,
+      "mean_treatment_value_update": -0.5999999999999999,
+      "same_price_pairs": 2,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.3333333333333333,
+      "value_update_95_ci": [
+        -0.24999999999999997,
+        -0.041666666666666685
+      ],
+      "value_update_bh_q_value": 0.0377242455150897,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.03017939641207176,
+      "within_one_percent_price_pairs": 3
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 0,
+        "discordant_pairs": 5,
+        "treatment_only_agreements": 5,
+        "two_sided_exact_p_value": 0.0625
+      },
+      "agreement_rate_difference": 0.4166666666666667,
+      "both_arm_agreement_pairs": 4,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.3333333333333333,
+      "directional_after_bh": true,
+      "expected_direction": "upward",
+      "field_group": "update",
+      "mean_control_value_update": -0.3083333333333333,
+      "mean_relative_price_effect": 0.06378530572618635,
+      "mean_relative_wtp_effect": 0.07113227331403094,
+      "mean_treatment_minus_control_value_update": 0.4916666666666667,
+      "mean_treatment_value_update": 0.18333333333333335,
+      "same_price_pairs": 0,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.75,
+      "value_update_95_ci": [
+        0.43333333333333335,
+        0.5666666666666668
+      ],
+      "value_update_bh_q_value": 0.0015999680006399872,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.00045999080018399634,
+      "within_one_percent_price_pairs": 0
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 0,
+        "discordant_pairs": 3,
+        "treatment_only_agreements": 3,
+        "two_sided_exact_p_value": 0.25
+      },
+      "agreement_rate_difference": 0.25000000000000006,
+      "both_arm_agreement_pairs": 4,
+      "complete_pairs": 12,
+      "control_agreement_rate": 0.3333333333333333,
+      "directional_after_bh": false,
+      "expected_direction": "downward",
+      "field_group": "update",
+      "mean_control_value_update": -0.3666666666666667,
+      "mean_relative_price_effect": -0.0044294666434896435,
+      "mean_relative_wtp_effect": -0.011579266771630792,
+      "mean_treatment_minus_control_value_update": -0.08333333333333331,
+      "mean_treatment_value_update": -0.44999999999999996,
+      "same_price_pairs": 2,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.5833333333333334,
+      "value_update_95_ci": [
+        -0.21666666666666665,
+        0.05000000000000001
+      ],
+      "value_update_bh_q_value": 0.374432511349773,
+      "value_update_direction_matches": true,
+      "value_update_sign_flip_p_value": 0.374432511349773,
+      "within_one_percent_price_pairs": 2
+    }
+  ],
+  "status": "task_fit_confirmation_analysis_complete",
+  "strata_summary": [
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 2,
+        "discordant_pairs": 21,
+        "treatment_only_agreements": 19,
+        "two_sided_exact_p_value": 0.00022125244140625
+      },
+      "agreement_rate_difference": 0.2833333333333333,
+      "both_arm_agreement_pairs": 24,
+      "control_agreement_rate": 0.43333333333333335,
+      "direction_matches": true,
+      "field_groups_with_expected_direction": 5,
+      "mean_relative_price_effect": 0.017498579175703632,
+      "mean_relative_wtp_effect": 0.05971627381815092,
+      "mean_treatment_minus_control_value_update": 0.4150000000000001,
+      "pairs": 60,
+      "price_effect_95_ci": [
+        0.001003099499854674,
+        0.014170672295074705
+      ],
+      "price_sign_flip_p_value": 0.037439251214975704,
+      "task_fit_stratum": "match",
+      "treatment_agreement_rate": 0.7166666666666667,
+      "value_update_95_ci": [
+        0.3733333333333333,
+        0.4583333333333333
+      ],
+      "value_update_sign_flip_p_value": 1.999960000799984e-05
+    },
+    {
+      "agreement_mcnemar": {
+        "control_only_agreements": 6,
+        "discordant_pairs": 15,
+        "treatment_only_agreements": 9,
+        "two_sided_exact_p_value": 0.6072387695312499
+      },
+      "agreement_rate_difference": 0.04999999999999999,
+      "both_arm_agreement_pairs": 17,
+      "control_agreement_rate": 0.38333333333333336,
+      "direction_matches": true,
+      "field_groups_with_expected_direction": 5,
+      "mean_relative_price_effect": -0.009817913350386398,
+      "mean_relative_wtp_effect": -0.019604883531775696,
+      "mean_treatment_minus_control_value_update": -0.14166666666666666,
+      "pairs": 60,
+      "price_effect_95_ci": [
+        -0.009159370809202672,
+        -0.00018100034948105603
+      ],
+      "price_sign_flip_p_value": 0.10743785124297514,
+      "task_fit_stratum": "mismatch",
+      "treatment_agreement_rate": 0.43333333333333335,
+      "value_update_95_ci": [
+        -0.18833333333333332,
+        -0.09499999999999999
+      ],
+      "value_update_sign_flip_p_value": 1.999960000799984e-05
+    }
+  ]
+}
