@@ -4,7 +4,7 @@ This repository contains the anonymous reproducibility materials for **Why Your 
 
 ## Experimental objective
 
-This study aims to explain how prices are formed in data markets by combining explicit product attributes with semantic information that emerges during buyer-seller negotiations. We first use a decision-tree baseline to represent the information visible on a data platform, then extract implicit pricing factors from negotiation records and incorporate them into an augmented model. We evaluate whether these factors provide useful additional price-prediction information and use the resulting interpretable model to discover causal pricing rules across domains.
+This study aims to explain how prices are formed in data markets by combining explicit product attributes with semantic information that emerges from LLM-based buyer-seller negotiation simulations. We construct buyer and seller agents with different market roles and preferences, use them to simulate controlled data transactions, and extract implicit pricing factors from the resulting negotiation records. These factors are then incorporated into an interpretable decision-tree model to test whether they provide additional price-prediction information and to discover causal pricing rules across domains.
 
 ## Contents
 
