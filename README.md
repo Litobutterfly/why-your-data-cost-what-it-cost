@@ -64,7 +64,7 @@ M0 uses explicit platform fields, while M1 adds semantic mechanisms extracted fr
 | Financial | 0.272831 | 0.260329 | 4.58% | 0.493929 | 0.498153 | +0.86% | 0.754050 | 0.749825 | -0.004225 |
 | Telecom | 0.315839 | 0.248022 | 21.47% | 0.572854 | 0.511158 | -10.77% | 0.721561 | 0.778307 | +0.056746 |
 
-Negotiation-derived semantic information reduces MAE in both domains. On the primary MAE measure, the model with implicit features predicts prices more accurately; therefore, M1 provides useful additional price-prediction information beyond M0. The Financial paired bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`), while the Telecom interval is `[0.026681, 0.113031]` (`p=0.0006`).
+Negotiation-derived semantic information reduces MAE in both domains. On the primary MAE measure, the model with implicit features predicts prices more accurately; therefore, M1 provides useful additional price-prediction information beyond M0.
 
 ## Financial causal pricing rules
 
