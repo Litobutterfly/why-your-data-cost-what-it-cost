@@ -54,11 +54,11 @@ The first two commands perform the data and baseline-model checks without an API
 
 To examine whether the proposed method can discover causal pricing rules across domains, we conducted an additional experiment on Telecom data products and identified three causal pricing rules. The results show that semantic information extracted from negotiations can explain buyers' pricing judgments and yield directionally clear, interpretable, and statistically supported causal pricing rules. The specific rules discovered in Financial and Telecom need not be identical: domain-specific rules reflect differences in how data products are priced and demonstrate that the proposed method can be applied to different data markets.
 
-The Telecom experiment completed 1,482 scenarios, comprising 741 matched treatment-control pairs. Three of four prespecified tests passed the Bonferroni-adjusted threshold of 0.0125:
+## Financial results and M1 versus M0
 
-- Surfacing a concrete documentation or verification gap lowers the buyer's initial quote.
-- Surfacing a concrete coverage advantage raises the buyer's initial quote.
-- Surfacing a concrete coverage limitation lowers the buyer's initial quote.
+In the Financial domain, M1 uses the explicit product fields together with the semantic mechanisms extracted from negotiation records. With the same ensemble size and decision-tree capacity as M0, M1 reduces the primary MAE from `0.272831` to `0.260329`, an improvement of `4.58%`. The paired product-level bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`). M1 also reduces the median absolute error by `34.68%`; RMSE increases by `0.86%` and R² decreases by `0.0042`, so the improvement is reported specifically for the prespecified MAE objective rather than for every metric.
 
-These findings are causal within the controlled LLM-agent simulator. Because this experiment was designed after an earlier Telecom experiment was observed, it is discovery-stage evidence rather than independent confirmation in a real market.
+The Telecom replication shows a larger improvement: M1 reduces MAE from `0.315839` to `0.248022` (`21.47%`), RMSE from `0.572854` to `0.511158` (`10.77%`), and increases R² from `0.721561` to `0.778307`. The paired product-level bootstrap 95% confidence interval for the MAE difference is `[0.026681, 0.113031]` (`p=0.0006`).
+
+These comparisons show that adding negotiation-derived semantic information can improve price prediction beyond the explicit-feature baseline, although the size and pattern of the improvement vary across domains.
 
