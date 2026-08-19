@@ -7,6 +7,7 @@ This repository contains the anonymous reproducibility materials for **Why Your 
 - `models/`: serialized M0 and M1 decision-tree models for both domains.
 - `protocols/`: frozen analysis protocols, persona definitions, and confirmation plans.
 - `results/`: released predictions, feature matrices, reports, causal-pricing-rule evidence, and mechanism-confirmation evidence.
+- `results/telecom/causal_pricing_rules/`: paired Telecom intervention outcomes, product-level effects, and the three supported causal pricing rules.
 - `code/`: the complete numbered workflow and its small support modules.
 
 ## Complete workflow
@@ -30,6 +31,7 @@ The numbered scripts describe the full experiment in execution order:
 - `16_prepare_telecom.py` through `21_evaluate_telecom.py` run the corresponding telecom replication.
 - `22_mine_causal_pricing_rules.py` through `26_build_rule_catalog.py` mine and summarize causal-pricing rules.
 - `27_prepare_mechanism_confirmation.py` through `30_build_final_evidence_catalog.py` confirm mechanisms and assemble the final evidence catalog.
+- `31_evaluate_telecom_causal_pricing_rules.py` reproduces the Telecom paired-effect tests and Bonferroni screening offline.
 
 Scripts that call the language-model service require `DEEPSEEK_API_KEY` in the environment. The package never stores a key. All other stages can be run offline from the released inputs and results.
 
@@ -43,7 +45,20 @@ python code/02_train_m0.py --domain financial
 python code/02_train_m0.py --domain telecom
 python code/23_prepare_rule_confirmation.py
 python code/27_prepare_mechanism_confirmation.py
+python code/31_evaluate_telecom_causal_pricing_rules.py
 ```
 
 The first two commands perform the data and baseline-model checks without an API. The later numbered scripts consume the fixed plans and released results; API-dependent stages are explicitly marked above.
+
+## Telecom causal pricing rules
+
+To examine whether the proposed method can discover causal pricing rules across domains, we conducted an additional experiment on Telecom data products and identified three causal pricing rules. The results show that semantic information extracted from negotiations can explain buyers' pricing judgments and yield directionally clear, interpretable, and statistically supported causal pricing rules. The specific rules discovered in Financial and Telecom need not be identical: domain-specific rules reflect differences in how data products are priced and demonstrate that the proposed method can be applied to different data markets.
+
+The Telecom experiment completed 1,482 scenarios, comprising 741 matched treatment-control pairs. Three of four prespecified tests passed the Bonferroni-adjusted threshold of 0.0125:
+
+- Surfacing a concrete documentation or verification gap lowers the buyer's initial quote.
+- Surfacing a concrete coverage advantage raises the buyer's initial quote.
+- Surfacing a concrete coverage limitation lowers the buyer's initial quote.
+
+These findings are causal within the controlled LLM-agent simulator. Because this experiment was designed after an earlier Telecom experiment was observed, it is discovery-stage evidence rather than independent confirmation in a real market.
 
