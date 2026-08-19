@@ -1,0 +1,96 @@
+{
+  "status": "telecom_causal_pricing_rule_analysis_complete",
+  "scenario_rows": 1482,
+  "paired_comparisons": 741,
+  "primary_outcome": "buyer_initial_quote_log10",
+  "prespecified_tests": 4,
+  "causal_pricing_rules_supported": 3,
+  "supported_rules": [
+    "Surfacing a concrete documentation or verification gap lowers the buyer's initial quote.",
+    "Surfacing a concrete coverage advantage raises the buyer's initial quote.",
+    "Surfacing a concrete coverage limitation lowers the buyer's initial quote."
+  ],
+  "all_results": [
+    {
+      "factor": "verification_gap",
+      "rule_text": "Surfacing a concrete documentation or verification gap lowers the buyer's initial quote.",
+      "outcome": "buyer_initial_quote_log10",
+      "products": 308,
+      "expected_direction": "negative",
+      "mean_effect_log10": -0.0073705920651331545,
+      "bootstrap_95pct_ci": [
+        -0.00982246309283274,
+        -0.004989220088357375
+      ],
+      "two_sided_t_test_p": 4.583125454695934e-09,
+      "prespecified_test": true,
+      "bonferroni_alpha": 0.0125,
+      "causal_pricing_rule_supported": true
+    },
+    {
+      "factor": "coverage_strength",
+      "rule_text": "Surfacing a concrete coverage advantage raises the buyer's initial quote.",
+      "outcome": "buyer_initial_quote_log10",
+      "products": 165,
+      "expected_direction": "positive",
+      "mean_effect_log10": 0.0062296228362419305,
+      "bootstrap_95pct_ci": [
+        0.0029998529730567046,
+        0.009584790273314091
+      ],
+      "two_sided_t_test_p": 0.00031582253267769026,
+      "prespecified_test": true,
+      "bonferroni_alpha": 0.0125,
+      "causal_pricing_rule_supported": true
+    },
+    {
+      "factor": "coverage_limitation",
+      "rule_text": "Surfacing a concrete coverage limitation lowers the buyer's initial quote.",
+      "outcome": "buyer_initial_quote_log10",
+      "products": 153,
+      "expected_direction": "negative",
+      "mean_effect_log10": -0.011891657882030527,
+      "bootstrap_95pct_ci": [
+        -0.01635680068915963,
+        -0.007630614907736756
+      ],
+      "two_sided_t_test_p": 3.2922638461446174e-07,
+      "prespecified_test": true,
+      "bonferroni_alpha": 0.0125,
+      "causal_pricing_rule_supported": true
+    },
+    {
+      "factor": "integration_burden",
+      "rule_text": "Surfacing a concrete integration burden lowers the buyer's initial quote.",
+      "outcome": "buyer_initial_quote_log10",
+      "products": 75,
+      "expected_direction": "negative",
+      "mean_effect_log10": -0.005293832985169066,
+      "bootstrap_95pct_ci": [
+        -0.010645985474029613,
+        -0.0003718233124311534
+      ],
+      "two_sided_t_test_p": 0.04963934033550051,
+      "prespecified_test": true,
+      "bonferroni_alpha": 0.0125,
+      "causal_pricing_rule_supported": false
+    },
+    {
+      "factor": "governance_risk",
+      "rule_text": "Surfacing a concrete governance risk lowers the buyer's initial quote.",
+      "outcome": "buyer_initial_quote_log10",
+      "products": 40,
+      "expected_direction": "negative",
+      "mean_effect_log10": -0.0036237532033006814,
+      "bootstrap_95pct_ci": [
+        -0.012942144909530632,
+        0.006937961117825698
+      ],
+      "two_sided_t_test_p": 0.482556439500085,
+      "prespecified_test": false,
+      "bonferroni_alpha": null,
+      "causal_pricing_rule_supported": false
+    }
+  ],
+  "claim_scope": "Causal effects within the controlled LLM-agent simulator; discovery-stage evidence rather than independent real-market confirmation."
+}

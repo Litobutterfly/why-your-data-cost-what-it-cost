@@ -1,0 +1,61 @@
+{
+  "status": "frozen_before_full_execution",
+  "protocol_version": "telecom-semantic-intervention-v2.1",
+  "domain": "Telecom",
+  "scenario_rows": 1482,
+  "paired_comparisons": 741,
+  "products_with_at_least_one_comparison": 477,
+  "pairing": {
+    "same_product": true,
+    "same_buyer": true,
+    "same_seller": true,
+    "same_random_seed": true,
+    "effect_definition": "signal-surfaced arm minus ordinary-listing-only arm"
+  },
+  "primary_outcome": "buyer_initial_quote_log10",
+  "family_alpha": 0.05,
+  "bonferroni_alpha_per_prespecified_test": 0.0125,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20260820,
+  "prespecified_tests": [
+    {
+      "factor": "verification_gap",
+      "expected_direction": "negative",
+      "eligible_products": 308,
+      "rule_text": "Surfacing a concrete documentation or verification gap lowers the buyer's initial quote."
+    },
+    {
+      "factor": "coverage_strength",
+      "expected_direction": "positive",
+      "eligible_products": 165,
+      "rule_text": "Surfacing a concrete coverage advantage raises the buyer's initial quote."
+    },
+    {
+      "factor": "coverage_limitation",
+      "expected_direction": "negative",
+      "eligible_products": 153,
+      "rule_text": "Surfacing a concrete coverage limitation lowers the buyer's initial quote."
+    },
+    {
+      "factor": "integration_burden",
+      "expected_direction": "negative",
+      "eligible_products": 75,
+      "rule_text": "Surfacing a concrete integration burden lowers the buyer's initial quote."
+    }
+  ],
+  "exploratory_test": {
+    "factor": "governance_risk",
+    "expected_direction": "negative",
+    "eligible_products": 40,
+    "rule_text": "Surfacing a concrete governance risk lowers the buyer's initial quote."
+  },
+  "selection_thresholds": {
+    "minimum_evidence_confidence": 0.65,
+    "minimum_impact_magnitude": 0.4
+  },
+  "real_transaction_price_visible_to_agents": false,
+  "expected_effect_direction_visible_to_agents": false,
+  "claim_scope": "Causal effects within the controlled LLM-agent simulator; discovery-stage evidence rather than independent real-market confirmation.",
+  "scenario_sha256": "02a99c1b9f9919048caa93aa0a5c28b0d72479e687b37cb91a9870faccfc35f4",
+  "paired_effects_sha256": "e3b80a552af16d8a96fb19acde2cc0482da3f2f31f85c74cbaed0fb7545000a8"
+}
