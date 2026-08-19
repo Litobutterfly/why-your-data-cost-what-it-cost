@@ -1,6 +1,11 @@
 # Why Your Data Cost What It Cost
 
 This repository contains the anonymous reproducibility materials for **Why Your Data Cost What It Cost**. The release contains only two domains: **financial** and **telecom**.
+
+## Experimental objective
+
+This study aims to explain how prices are formed in data markets by combining explicit product attributes with semantic information that emerges during buyer-seller negotiations. We first use a decision-tree baseline to represent the information visible on a data platform, then extract implicit pricing factors from negotiation records and incorporate them into an augmented model. We evaluate whether these factors provide useful additional price-prediction information and use the resulting interpretable model to discover causal pricing rules across domains.
+
 ## Contents
 
 - `data/`: the two released domain tables and their fixed train/test split files.
@@ -59,11 +64,11 @@ M0 uses explicit platform fields, while M1 adds semantic mechanisms extracted fr
 | Financial | 0.272831 | 0.260329 | 4.58% | 0.493929 | 0.498153 | +0.86% | 0.754050 | 0.749825 | -0.004225 |
 | Telecom | 0.315839 | 0.248022 | 21.47% | 0.572854 | 0.511158 | -10.77% | 0.721561 | 0.778307 | +0.056746 |
 
-The negotiation-derived semantic information reduces the primary MAE in both domains. The Financial paired bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`), while the Telecom interval is `[0.026681, 0.113031]` (`p=0.0006`). M1 therefore provides useful additional price-prediction information beyond M0. The Financial result is an MAE improvement rather than an improvement on every secondary metric: its median absolute error falls by `34.68%`, while RMSE increases by `0.86%` and R² decreases by `0.0042`.
+Negotiation-derived semantic information reduces MAE in both domains. On the primary MAE measure, the model with implicit features predicts prices more accurately; therefore, M1 provides useful additional price-prediction information beyond M0. The Financial paired bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`), while the Telecom interval is `[0.026681, 0.113031]` (`p=0.0006`).
 
 ## Financial causal pricing rules
 
-The Financial experiments identified six causal pricing rules. They cover task fit, task mismatch, coverage fit, identifier fit, customization limits, and update-cadence fit. Three rules also received strict negotiated-price support: confirming task fit, confirming that coverage meets the buyer's task, and confirming that the product's update cadence meets the buyer's refresh requirement. The other three rules showed causal effects on effective willingness to pay, but their negotiated-price effects were not strictly confirmed.
+The Financial experiments confirmed six causal pricing rules. They cover task fit, task mismatch, coverage fit, identifier fit, customization limits, and update-cadence fit. Three rules also received strict negotiated-price support: confirming task fit, confirming that coverage meets the buyer's task, and confirming that the product's update cadence meets the buyer's refresh requirement. The other three rules showed causal relationships with effective willingness to pay.
 
 ## Telecom causal pricing rules
 
