@@ -50,15 +50,22 @@ python code/31_evaluate_telecom_causal_pricing_rules.py
 
 The first two commands perform the data and baseline-model checks without an API. The later numbered scripts consume the fixed plans and released results; API-dependent stages are explicitly marked above.
 
+## M1 versus M0 comparison
+
+M0 uses explicit platform fields, while M1 adds semantic mechanisms extracted from negotiation records. Both models use the same decision-tree capacity within each domain.
+
+| Domain | M0 MAE | M1 MAE | MAE reduction | M0 RMSE | M1 RMSE | RMSE change | M0 R² | M1 R² | R² change |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Financial | 0.272831 | 0.260329 | 4.58% | 0.493929 | 0.498153 | +0.86% | 0.754050 | 0.749825 | -0.004225 |
+| Telecom | 0.315839 | 0.248022 | 21.47% | 0.572854 | 0.511158 | -10.77% | 0.721561 | 0.778307 | +0.056746 |
+
+The negotiation-derived semantic information reduces the primary MAE in both domains. The Financial paired bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`), while the Telecom interval is `[0.026681, 0.113031]` (`p=0.0006`). M1 therefore provides useful additional price-prediction information beyond M0. The Financial result is an MAE improvement rather than an improvement on every secondary metric: its median absolute error falls by `34.68%`, while RMSE increases by `0.86%` and R² decreases by `0.0042`.
+
+## Financial causal pricing rules
+
+The Financial experiments identified six causal pricing rules. They cover task fit, task mismatch, coverage fit, identifier fit, customization limits, and update-cadence fit. Three rules also received strict negotiated-price support: confirming task fit, confirming that coverage meets the buyer's task, and confirming that the product's update cadence meets the buyer's refresh requirement. The other three rules showed causal effects on effective willingness to pay, but their negotiated-price effects were not strictly confirmed.
+
 ## Telecom causal pricing rules
 
-To examine whether the proposed method can discover causal pricing rules across domains, we conducted an additional experiment on Telecom data products and identified three causal pricing rules. The results show that semantic information extracted from negotiations can explain buyers' pricing judgments and yield directionally clear, interpretable, and statistically supported causal pricing rules. The specific rules discovered in Financial and Telecom need not be identical: domain-specific rules reflect differences in how data products are priced and demonstrate that the proposed method can be applied to different data markets.
-
-## Financial results and M1 versus M0
-
-In the Financial domain, M1 uses the explicit product fields together with the semantic mechanisms extracted from negotiation records. With the same ensemble size and decision-tree capacity as M0, M1 reduces the primary MAE from `0.272831` to `0.260329`, an improvement of `4.58%`. The paired product-level bootstrap gives a 95% confidence interval of `[0.003172, 0.021271]` for the M0-minus-M1 MAE difference (`p=0.0089`). M1 also reduces the median absolute error by `34.68%`; RMSE increases by `0.86%` and R² decreases by `0.0042`, so the improvement is reported specifically for the prespecified MAE objective rather than for every metric.
-
-The Telecom replication shows a larger improvement: M1 reduces MAE from `0.315839` to `0.248022` (`21.47%`), RMSE from `0.572854` to `0.511158` (`10.77%`), and increases R² from `0.721561` to `0.778307`. The paired product-level bootstrap 95% confidence interval for the MAE difference is `[0.026681, 0.113031]` (`p=0.0006`).
-
-These comparisons show that adding negotiation-derived semantic information can improve price prediction beyond the explicit-feature baseline, although the size and pattern of the improvement vary across domains.
+To examine whether the proposed method can discover causal pricing rules across domains, we conducted an additional experiment on Telecom data products and identified three causal pricing rules. The rules concern documentation or verification gaps, coverage advantages, and coverage limitations. The specific rules discovered in Financial and Telecom need not be identical: domain-specific rules reflect differences in how data products are priced and demonstrate that the proposed method can be applied to different data markets.
 
